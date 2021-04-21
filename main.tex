@@ -1,0 +1,76 @@
+%\documentclass[12pt]{scrreprt}
+\documentclass[12pt]{report} 
+
+% language may be romanian or english (default is english)
+% type may be bachelor or master (default is bachelor)
+\usepackage[language=romanian, type=bachelor]{style}
+
+%\geometry{a4paper,top=2.5cm,left=3cm,right=2.5cm,bottom=2.5cm}
+%in style
+%controlling the appearance of your headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\renewcommand{\headrulewidth}{0.2pt}
+\renewcommand{\footrulewidth}{0.2pt}
+
+% Attributes for preventing the overlapping of the text written with monospace font (\texttt)
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+\begin{document}
+
+\specialization{INFORMATICĂ}	
+\title{Distribuția streamurilor audio-video în sesiuni WebRTC}					   
+\author{Haja Florin-Gabriel}											
+\supervisor{Lect. dr. Sterca Adrian-Ioan}				
+				
+\maketitle
+
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+
+\newpage
+\pagenumbering{roman} 
+
+\cleardoublepage
+ABSTRACT
+\vspace{0.5cm}	
+\hrule
+\vspace{0.5cm}	
+%\cleardoublepage
+
+\par Această lucrare este un studiu în profunzime al protocoalelor de comunicare folosite de proiectul WebRTC și al modului în care conținutul audio-video poate fi distribuit în cadrul a mai multor clienți. Odată ce oamenii folosesc Internetul în scop productiv din ce în ce mai mult, este crucială asigurarea faptului că informația este transmisă pe cât de fluent posibil. Deoarece unele conexiuni la Internet au o lățime de bandă limitată, este mai dificilă gestionarea sesiunilor de apel video cu mulți utilizatori.
+\par Putem opta ori pentru un server media care să gestioneze livrarea datelor pentru noi, ori pentru a conecta fiecare client cu toți ceilalți, într-o manieră a topologiei mesh (engl. plasă). De exemplu, în cadrul participării la un curs, se poate observa un scenariu de broadcasting, în care profesorul furnizează conținutul, iar studenții doar îl observă, așadar datele sunt transmise într-o singură direcție, iar topologia mesh nu are un beneficiu real. În locul servirii tuturor studenților deodată, putem servi câțiva, aceștia trimițând repetat streamul mai departe, până când toți pot să vizioneze ceea ce predă profesorul. Se poate observa o topologie arborescentă. Nu mai este nevoie de un server media, însemnând costuri de mentenanță mai mici, cu un compromis din partea clienților al lățimii de bandă folosite.
+
+%\par This thesis is an in-depth study of the communication protocols used by the WebRTC project and the way the audio-video content can be distributed across multiple clients. As people are using the Internet productively more and more, it is crucial to ensure the information is transmitted as fluidly as possible. Since some Internet connection may be limited in bandwidth, it is more difficult to handle video call sessions with many users. 
+%\par We can opt for using a media server that handles the data delivery for us, or to connect each client with the other, in a mesh topology fashion. When attending a class, for example, we are noticing a broadcasting scenario, as the teacher is providing the content and the students are only looking at it, thus the data can be streamed in one direction, and the mesh topology having no real purpose. Instead of serving all the students at once, we can serve a few, which will forward the stream to others, repeatedly streaming until everyone is able to watch what is the teacher showing. We notice a tree topology. A media server is no longer required, meaning cheaper maintenance costs, but sacrificing the low bandwidth each client is using.
+
+
+\tableofcontents
+
+
+\newpage
+\pagenumbering{arabic}
+
+\input{chapters/chapter1_introduction}
+%\addcontentsline{toc}{chapter}{Introducere}
+%\addcontentsline{toc}{chapter}{Introduction}
+
+\input{chapters/chapter2}
+\input{chapters/chapter3}
+\input{chapters/chapter4}
+
+\input{chapters/chapter6_conclusions}
+%\addcontentsline{toc}{chapter}{Concluzii}
+%\addcontentsline{toc}{chapter}{Conclusions}
+
+\bibliography{references}
+
+\end{document}

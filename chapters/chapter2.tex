@@ -1,0 +1,53 @@
+
+\chapter{Familiarizarea cu WebRTC}
+\label{chap:ch2}
+
+\indent \par Acest capitol are ca scop introducerea în principiile de bază și în componentele proiectului WebRTC, cu menirea de a putea înțelege conceptele următoare. Acoperă API-urile comune, precum și principiile de rețelistică folosite pentru comunicare calitativă, cu latență mică.
+
+\section{Istoria}
+\label{sec:ch2sec1}
+
+\indent \par WebRTC a fost dezvoltat ca un standard de către World Wide Web Consortium (W3C) și de către Internet Engineering Task Force (IETF), ca o colecție open-source de standarde și protocoale. Tehnologiile necesare, precum codecuri și algoritmi de anulare a ecoului, au fost dezvoltate de către o companie suedeză numită Global IP Solutions (GIPS), care a fost mai târziu cumpărată de Google în mai 2010 \cite{WebNSM2017}.
+
+\section{API-uri JavaScript}
+\label{sec:ch2sec2}
+\indent \par WebRTC este furnizat cu fiecare browser web popular, precum și cu framework-urile derivate (ex. Electron). Este metoda principală de a dezvolta aplicații noi de conferințe video. Expune mai multe API-uri JavaScript ușor de folosit, fiecare responsabil de setul său specific de funcții, precum: cameră și microfon, conținutul ecranului și conexiuni de la egal la egal.
+
+\subsection{Capturarea conținutului media}
+\label{sec:ch2sec2subsec1}
+\indent \par Pentru a face folosi streaming-ul audio-video cu un scop, o sursă de conținut este necesară. Media Devices este un nume comun pentru camerele și microfoanele conectate. În JavaScript, aceste device-uri sunt accesibile prin intermedul interfeței \texttt{navigator.mediaDevices}, prin care toate dispozitivele conectate pot fi enumerate, urmărite pentru schimbări, precum și deschise pentru a obține o instanță de \texttt{MediaStream} \cite{WebMedia2014}.
+% Please review the last phrase, as it's taken word by word from the official WebRTC page
+\indent \par Acest API este folosit prin apelul funcției \texttt{mediaDevices.getUserMedia()}, care returnează un promise al cărei funcție de resolve conține un parametru pentru \texttt{MediaStream}-ul asociat dispozitivului. Aceasta cere furnizarea ca parametru un obiect de tip \texttt{MediaStreamConstraints}, prin care constrângeri asupra sursei audio și video se pot specifica, precum și, opțional, identitatea peer, singura care are are acces la stream, unde conținutul este protejat ca și cum regulile CORS cross-origin ar fi în aplicare.
+\indent \par O altă opțiune este de a partaja conținutul ecranului. Aceasta este posibilă prin intermediul funcției \texttt{mediaDevices.getDisplayMedia()}, foarte similară cu \texttt{getUserMedia}, care de asemenea returnează un promise ce rezolvă un \texttt{MediaStream}. Totuși, constrângerile video sunt diferite: alegerea între multiple opțiuni de a afișa cursorul (mereu, doar când este în mișcare, sau niciodată) și de a afișa zona capturată (întregul ecran, doar o fereastră, sau o filă din browser).
+\indent \par Înregistrarea conținutului unui \texttt{MediaStream} este posibilă prin API-ul \texttt{MediaRecorder}, dar în această teză, ne vom concentra doar pe streaming.
+\indent \par Vizionarea streamului o chestiune de a crea un elementul HTML \texttt{video}, setarea obiectului sursă ca fiind \texttt{MediaStream}-ul și de a furniza o funcție care să redea streamul când metadatele sunt încărcate, ca event handler în proprietatea \texttt{onloadedmetadata} din elementul \texttt{video}.
+
+\subsection{Inițializarea unei conexiuni peer}
+\label{sec:ch2sec2subsec2}
+
+\indent \par Conexiunile peer sunt o parte a specificațiilor WebRTC care ajută la stabilirea unei conexiuni între două aplicații pe două calculatoare diferite pentru a comunica printr-un protocol peer-to-peer. Acestea pot transmite audio, video, sau date bine (cât timp clienții suportă API-ul \texttt{RTCDataChannel}) \cite{WebPeer2014}.
+\indent \par Fiecare conexiune peer este gestionată de un obiect \texttt{RTCPeerConnection}, care este instanțiată prin constructorul său specificat ce primește ca parametru un \texttt{RTCConfiguration}, care definește modul în care conexiunea peer este pregătită și care ar trebui să conține informații despre serverele ICE folosite.
+\indent \par Pentru inițierea comunicării, este prioritară crearea unei cereri sau unui răspuns SDP, în funcție dacă este vorba despre peer-ul ce apelează, sau despre peer-ul ce răspunde. Apelantul trebuie să trimită obiectul SDP pe care l-a creat peer-ului de la distanță printr-un canal de signaling, diferit de cel prin care se vor transmite datele. Procedura numită signaling nu are o definiție standard.
+\indent \par Inițierea unui \texttt{RTCPeerConnection} din apelant cere crearea unui descriptor local, obiect de tip \texttt{RTCSessionDescription} prin metoda \texttt{createOffer()} din instanța de \texttt{RTCPeerConnection}. Va fi setat ca fiind descriptor local prin \texttt{setLocalDescription()} și va fi trimis la apelat prin canalul de signaling. Apelatul, când primește descriptorul sesiunii, va apela \texttt{setRemoteDescription()} și va crea un răspuns la cererea primită cu \texttt{createAnswer()} care de asemenea va fi trimis prin canalul de signaling. Inițiatorul apelului va primi răspunsul și îl va seta ca fiind descriptorul remote.
+
+\subsection{Adăugarea stream track-urilor}
+\label{sec:ch2sec2subsec3}
+
+\indent \par După crearea unei instanțe de \texttt{RTCPeerConnection}, track-urile de stream trebuie adăugate. Revenind la dispozitivele media și la obiectele sale \texttt{MediaStream}, track-urile sunt conținute într-o listă accesibilă din funcția \texttt{getTracks()}. Acestea pot fi adăugate la conexiunea peer cu \texttt{addTrack}, care cere instanța streamului \cite{WebStream2014}.
+\indent \par Peer-ul care răspunde nu conține o instanță proprie de \texttt{MediaStream} care să conțină track-urile, așadar trebuie să creeze una și să adauge track-urile remote la ea. Un handler de evenimente numit \texttt{ontrack} trebuie adăugat. Gestionează câte un track odată. În acest caz, handler-ul va adăuga la instanța nou creată de \texttt{MediaStream}, care va fi setată ca obiectul sursă al elementului \texttt{video}.
+
+\subsection{Obținerea candidaților ICE}
+\label{sec:ch2sec2subsec4}
+
+% TODO 
+\indent \par Schimbul de informație de conectivitate este obligatoriu înainte ca doi peers pot comunica. Condițiile rețelei pot fi variabile în funcție de un număr de factori (ex. ascunderea adreselor sale IP prin NAT), așadar un intermediar este folosit pentru a descoperi candidații pentru conectarea la peer. Acesta este un serviciu extern și se numește ICE (Interactive Connectivity Estabilishment) și se bazează pe un server STUN sau pe un server TURN. Indirect, serverele STUN (Session Traversal Utilites for NAT) sunt folosite în cele mai multe aplicații WebRTC, deoarece principiul lor de funcționare este mai simplu. Acestea sunt specificație în câmpul \texttt{iceServers} al obiectului de tip \texttt{RTCConfiguration} folosit la crearea obiectului \texttt{RTCPeerConnection}.
+\indent \par Fiecare instanță de \texttt{RTCPeerConnection} conține un handler de evenimente pentru noii candidați, numit \texttt{onicecandidate}. Este recomandat să se adauge unul care apelează \texttt{addIceCandidate()} și trimite noii candidați la celălalt peer, care, la rândul său, îi va memora.
+
+\section{Signaling}
+\label{sec:ch2sec3}
+% TODO cauta un termen 
+\indent \par Nu există un protocol standard definit pentru signaling (engl. „semnalizare”). Orice mecanism RPC care funcționează pe aplicații web poate fi aplicat, indiferent dacă este un API Web bazat pe HTTP (ex. REST sau GraphQL) sau pe WebSockets, care folosește HTTP pentru inițializare. 
+\indent \par In the classic VoIP world, the dominant signaling protocol was SIP (Session Initiation Protocol), which brought a variety of features meant for 
+
+\section{NAT traversal}
+\label{sec:ch2sec4}
