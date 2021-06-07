@@ -1,0 +1,45 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>Layer 1</title>
+  <ellipse stroke="#000" ry="45" rx="44.5" id="svg_3" cy="78.16667" cx="284" fill="#c0c0c0"/>
+  <ellipse transform="rotate(-53.6 202.324 473.523)" stroke="#000" ry="34.5" rx="34.5" id="svg_4" cy="473.52343" cx="202.32369" fill="#2d2d2d"/>
+  <ellipse transform="rotate(-53.6 382.438 470.198)" stroke="#000" ry="34.5" rx="34.5" id="svg_6" cy="470.19841" cx="382.43829" fill="#2d2d2d"/>
+  <ellipse transform="rotate(-53.6 328.781 303.798)" stroke="#000" ry="34.5" rx="34.5" id="svg_7" cy="303.79848" cx="328.78084" fill="#2d2d2d"/>
+  <ellipse transform="rotate(-53.6 113.63 511.252)" stroke="#000" ry="15.5" rx="15.5" id="svg_8" cy="511.2521" cx="113.63012" fill="#2d2d2d"/>
+  <ellipse transform="rotate(-53.6 115.935 450.831)" stroke="#000" ry="15.5" rx="15.5" id="svg_9" cy="450.83116" cx="115.93468" fill="#2d2d2d"/>
+  <ellipse transform="rotate(-53.6 145.778 553.59)" stroke="#000" ry="15.5" rx="15.5" id="svg_10" cy="553.58986" cx="145.77842" fill="#2d2d2d"/>
+  <ellipse transform="rotate(-53.6 398.355 549.718)" stroke="#000" ry="15.5" rx="15.5" id="svg_11" cy="549.71829" cx="398.35518" fill="#2d2d2d"/>
+  <ellipse transform="rotate(-53.6 450.522 521.09)" stroke="#000" ry="15.5" rx="15.5" id="svg_12" cy="521.0895" cx="450.52215" fill="#2d2d2d"/>
+  <ellipse transform="rotate(-53.6 460.623 460.205)" stroke="#000" ry="15.5" rx="15.5" id="svg_13" cy="460.20462" cx="460.62317" fill="#2d2d2d"/>
+  <ellipse transform="rotate(-53.6 329.635 218.271)" stroke="#000" ry="15.5" rx="15.5" id="svg_14" cy="218.27075" cx="329.6346" fill="#2d2d2d"/>
+  <ellipse transform="rotate(-53.6 274.46 245.924)" stroke="#000" ry="15.5" rx="15.5" id="svg_15" cy="245.92418" cx="274.45954" fill="#2d2d2d"/>
+  <ellipse transform="rotate(-53.6 389.667 246.379)" stroke="#000" ry="15.5" rx="15.5" id="svg_16" cy="246.37936" cx="389.66714" fill="#2d2d2d"/>
+  <line transform="rotate(-53.6 264.019 387.315)" stroke-width="1.5" id="svg_17" y2="387.31473" x2="335.51862" y1="387.31473" x1="192.51862" stroke="#000" fill="none"/>
+  <line transform="rotate(-53.6 292.726 477.335)" stroke-width="1.5" stroke="#000" id="svg_18" y2="521.86128" x2="325.80525" y1="432.80865" x1="259.64736" fill="none"/>
+  <line transform="rotate(-53.6 359.369 386.764)" stroke-width="1.5" id="svg_19" y2="341.67677" x2="387.96575" y1="431.85215" x1="330.7728" stroke="#000" fill="none"/>
+  <line transform="rotate(-53.6 149.861 461.342)" stroke-width="1.5" id="svg_20" y2="479.64008" x2="157.09491" y1="443.04421" x1="142.62678" stroke="#000" fill="none"/>
+  <line transform="rotate(-53.6 149.517 497.304)" stroke-width="1.5" id="svg_21" y2="508.15484" x2="169.7303" y1="486.45264" x1="129.30463" stroke="#000" fill="none"/>
+  <line transform="rotate(-53.6 169.894 522.372)" stroke-width="1.5" id="svg_22" y2="521.94609" x2="193.5111" y1="522.79715" x1="146.2769" stroke="#000" fill="none"/>
+  <line transform="rotate(-53.6 295.636 267.203)" stroke-width="1.5" id="svg_23" y2="281.24592" x2="293.29534" y1="253.16072" x1="297.97621" stroke="#000" fill="none"/>
+  <line transform="rotate(-53.6 332.53 251.581)" stroke-width="1.5" id="svg_24" y2="262.21932" x2="318.70044" y1="240.94266" x1="346.36011" stroke="#000" fill="none"/>
+  <line transform="rotate(-53.6 366.423 269.431)" stroke-width="1.5" id="svg_25" y2="266.0271" x2="349.82681" y1="272.83563" x1="383.01841" stroke="#000" fill="none"/>
+  <line transform="rotate(-53.6 430.837 464.953)" stroke-width="1.5" id="svg_26" y2="475.37844" x2="440.62424" y1="454.5273" x1="421.04971" stroke="#000" fill="none"/>
+  <line transform="rotate(-53.6 423.903 501.607)" stroke-width="1.5" id="svg_27" y2="519.26648" x2="423.9033" y1="483.94722" x1="423.9033" stroke="#000" fill="none"/>
+  <line transform="rotate(-53.6 390.605 519.881)" stroke-width="1.5" id="svg_28" y2="507.96566" x2="400.39237" y1="531.79552" x1="380.81784" stroke="#000" fill="none"/>
+  <line id="svg_30" y2="230.76873" x2="269.23014" y1="122.3073" x1="275.38398" stroke="#000" fill="none"/>
+  <line id="svg_31" y2="203.07645" x2="326.53778" y1="115.76884" x1="308.84549" stroke="#000" fill="none"/>
+  <ellipse stroke="#000" ry="34.5" rx="34.5" id="svg_32" cy="187.51202" cx="563.2332" fill="#2d2d2d"/>
+  <ellipse stroke="#000" ry="15.5" rx="15.5" id="svg_33" cy="280.84052" cx="564.68998" fill="#2d2d2d"/>
+  <ellipse stroke="#000" ry="45" rx="44.5" id="svg_34" cy="83.53255" cx="562.00068" fill="#c0c0c0"/>
+  <line stroke="#000" stroke-width="1.5" id="svg_35" y2="343.33509" x2="535.49907" y1="343.36203" x1="596.55707" fill="none"/>
+  <text font-style="normal" font-weight="normal" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="14" stroke-width="0" id="svg_36" y="85.61466" x="619.27927" stroke="#000" fill="#000000">Serverul de autentificare</text>
+  <text xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="14" id="svg_37" y="191.75995" x="620.95525" stroke-width="0" stroke="#000" fill="#000000">Supernod</text>
+  <text xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="14" id="svg_38" y="286.73205" x="621.51391" stroke-width="0" stroke="#000" fill="#000000">Nod</text>
+  <text xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="14" id="svg_39" y="347.96215" x="621.51391" stroke-width="0" stroke="#000" fill="#000000">Legătură între vecini</text>
+  <line id="svg_40" y2="197.56944" x2="146.18056" y1="162.84722" x1="273.26389" stroke="#000" fill="none"/>
+  <line id="svg_42" y2="168.40278" x2="319.44444" y1="197.22222" x1="146.52778" stroke="#000" fill="none"/>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="14" id="svg_43" y="209.72222" x="23.95833" stroke-width="0" stroke="#000" fill="#000000">schimb de mesaje la autentificare</text>
+  <text xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="14" id="svg_45" y="225.69444" x="23.95833" stroke-width="0" stroke="#000" fill="#000000">la momentul autentificării</text>
+ </g>
+</svg>
