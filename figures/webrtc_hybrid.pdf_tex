@@ -1,6 +1,6 @@
 %% Creator: Inkscape 1.1 (c68e22c387, 2021-05-23), www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'skypenetwork.pdf' (pdf, eps, ps)
+%% Accompanies image file 'webrtc_hybrid.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{575.98218012bp}%
+    \setlength{\unitlength}{577.92779254bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,16 +50,15 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.69913756)%
+  \begin{picture}(1,0.64043373)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{figures/skypenetwork.pdf}}%
-    \put(0.77420235,0.63019273){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Serverul de autentificare\end{tabular}}}}%
-    \put(0.77638467,0.49197845){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Supernod\end{tabular}}}}%
-    \put(0.77711211,0.36831302){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Nod\end{tabular}}}}%
-    \put(0.77711211,0.28858386){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Legătură între vecini\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{figures/skypenetwork.pdf}}%
-    \put(-0.00097914,0.46858936){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}schimb de mesaje cu serverul\end{tabular}}}}%
-    \put(-0.00097914,0.44779154){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}la momentul autentificării\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{figures/webrtc_hybrid.pdf}}%
+    \put(0.71835995,0.55459664){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}server de signaling\end{tabular}}}}%
+    \put(0.71640036,0.39640704){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}client\end{tabular}}}}%
+    \put(0.7165609,0.12167083){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}flux de pachete RTP\end{tabular}}}}%
+    \put(0.72040845,0.2539083){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}server MCU\end{tabular}}}}%
+    \put(0.71561228,0.0141009){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}conexiune WebSocket\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{figures/webrtc_hybrid.pdf}}%
   \end{picture}%
 \endgroup%

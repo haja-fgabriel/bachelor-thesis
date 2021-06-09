@@ -1,0 +1,96 @@
+%% Creator: Inkscape 1.1 (c68e22c387, 2021-05-23), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'webrtc_sdp_ice_exchange.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{440.18600877bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.69893704)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{figures/webrtc_sdp_ice_exchange.pdf}}%
+    \put(0.03242466,0.6493955){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Client A\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{figures/webrtc_sdp_ice_exchange.pdf}}%
+    \put(0.25745154,0.6493955){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}STUN\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{figures/webrtc_sdp_ice_exchange.pdf}}%
+    \put(0.4136745,0.6493955){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}TURN\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{figures/webrtc_sdp_ice_exchange.pdf}}%
+    \put(0.57127565,0.6493955){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Server signaling\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{figures/webrtc_sdp_ice_exchange.pdf}}%
+    \put(0.88011564,0.6493955){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Client B\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{figures/webrtc_sdp_ice_exchange.pdf}}%
+    \put(0.12409462,0.44043502){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Cine sunt?\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{figures/webrtc_sdp_ice_exchange.pdf}}%
+    \put(0.16754944,0.29107561){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}alocă-mi un canal\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{figures/webrtc_sdp_ice_exchange.pdf}}%
+    \put(0.31157672,0.57509159){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}SDP oferit\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{figures/webrtc_sdp_ice_exchange.pdf}}%
+    \put(0.73542216,0.57509159){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}SDP oferit\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{figures/webrtc_sdp_ice_exchange.pdf}}%
+    \put(0.71947835,0.51023242){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}SDP răspuns\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{figures/webrtc_sdp_ice_exchange.pdf}}%
+    \put(0.29563286,0.51023239){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}SDP răspuns\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{figures/webrtc_sdp_ice_exchange.pdf}}%
+    \put(0.11366883,0.37893045){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}NAT simetric\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{figures/webrtc_sdp_ice_exchange.pdf}}%
+    \put(0.27409134,0.14980661){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Candidați ICE (A)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{figures/webrtc_sdp_ice_exchange.pdf}}%
+    \put(0.16567559,0.21987485){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Candidați ICE (A)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{figures/webrtc_sdp_ice_exchange.pdf}}%
+    \put(0.68593258,0.15184987){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Candidați ICE (A)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{figures/webrtc_sdp_ice_exchange.pdf}}%
+    \put(0.69793681,0.07073141){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Candidați ICE (B)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{figures/webrtc_sdp_ice_exchange.pdf}}%
+    \put(0.27409134,0.07073138){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Candidați ICE (B)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{figures/webrtc_sdp_ice_exchange.pdf}}%
+    \put(0.54794008,0.41324644){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Cine sunt?\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{figures/webrtc_sdp_ice_exchange.pdf}}%
+    \put(0.52523664,0.34845195){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}8.9.10.11:1234\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{figures/webrtc_sdp_ice_exchange.pdf}}%
+  \end{picture}%
+\endgroup%

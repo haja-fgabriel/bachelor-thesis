@@ -2,29 +2,123 @@
 \label{chap:ch3}
 
 \indent \par Acest capitol are ca scop introducerea în principiile de bază și în componentele proiectului WebRTC, cu menirea de a putea înțelege conceptele următoare. Acoperă API-urile comune, precum și principiile de rețelistică folosite pentru comunicare calitativă, cu latență mică.
-
-%\section{Istoria}
-%\label{sec:ch2sec1}
-% TODO mută în primul paragraf
-\indent \par WebRTC a fost dezvoltat ca un standard de către World Wide Web Consortium (W3C) și de către Internet Engineering Task Force (IETF), ca o colecție open-source de standarde și protocoale. Tehnologiile necesare, precum codecuri și algoritmi de anulare a ecoului, au fost dezvoltate de către o companie suedeză numită Global IP Solutions (GIPS), care a fost mai târziu cumpărată de Google în mai 2010 \cite{WebNSM2017}.
+\indent \par WebRTC a fost dezvoltat ca standard de către World Wide Web Consortium (W3C) și de către Internet Engineering Task Force (IETF), fiind o colecție open-source de standarde și protocoale. Tehnologiile necesare, precum codecuri și algoritmi de anulare a ecoului, au fost dezvoltate de către o companie suedeză numită Global IP Solutions (GIPS), care a fost mai târziu cumpărată de Google în mai 2010 \cite{WebNSM2017}. Google a făcut publică implementarea acest proiect în mai 2011 și a propus către IETF standardizarea acestuia. Similar, alți lideri ai industriei precum Mozilla, Ericsson, Microsoft și Apple au furnizat implementări pentru WebRTC, în 2013 fiind realizată interoperabilitatea între browserele Chrome și Firefox \cite{Nyman2013}. Standardul a fost finalizat în ianuarie 2021 și este cunoscut ca RFC 8825.
 
 \section{Arhitectura}
 \label{sec:ch3sec1}
 
 % TODO modifică partea asta
-\indent \par Nu există un protocol standard definit pentru semalizare (engl. \textit{signaling}). Orice mecanism RPC care funcționează pe aplicații web poate fi aplicat, indiferent dacă este un API Web bazat pe HTTP (ex. REST sau GraphQL) sau pe WebSockets, care folosește HTTP pentru inițializare. 
-\indent \par In the classic VoIP world, the dominant signaling protocol was SIP (Session Initiation Protocol), which brought a variety of features meant for 
+\subsection{Stabilirea conexiunilor}
+\label{sec:ch3sec1subsec1}
+\indent \par La începuturile videoconferințelor pe Internet, protocolul dominant pentru stabilirea conexiunilor între clienți era SIP (Session Initiation Protocol). Însă acesta nu vine inclus cu browserele moderne, așadar este nevoie de a furniza o implementare precum SIP.js \cite{WebNSM2017}. Așadar, WebRTC oferă liberatea dezvoltatorului de a stabili modalitatea prin care doi clienți pot iniția un apel. 
+\indent \par Mecanismul prin care se face legătura între aceștia se numește \textit{signaling} (engl. \textit{semnalizare}). Poate fi implementat folosind cereri HTTP, însă prin natura stateless a protocolului HTTP, prin care nu se păstrează informațiile de la cererile anterioare, trebuie trimise continuu cereri, chiar dacă nu se primește sau transmite niciun mesaj nou \cite{WebNSM2017}. Această abordare duce la risipă de lățime de bandă și la o latență ridicată \cite{WebNSM2017}. O soluție ar fi de a inițializa o conexiune WebSocket, care păstrează deschisă legătura cu serverul. Singura responsabilitate a dezvolatorului rămâne de a asigura realizarea schimbului de pachete SDP între clienți și a candidaților ICE, despre care voi discuta în subcapitolul următor. Ca observație, oricare din clienți poate să schimbe sursa conținutului de transmis, organizată pe track-uri separate pentru audio și pentru video - ce vor fi șterse - moment în care se vor renegocia pachetele SDP.
+
+\subsection{Topologii de comunicare}
+\label{sec:ch3sec1subsec2}
+\indent \par WebRTC este conceput pentru a permite comunicarea directă între participanți, fără a fi nevoie de a transporta pachetele multimedia printr-un server specializat. Totuși, există situații în care această modalitate este dezavantajoasă, acest lucru putându-se specifica la momentul creării conexiunii.
+\subsubsection{Mesh}
+\label{sec:ch3sec1subsec2subsubsec1}
+\begin{figure}[H]
+    \centering
+    \scalebox{0.65}{\input{figures/webrtc_mesh.pdf_tex}}
+    \caption{Topologie mesh într-o sesiune WebRTC}
+    \label{WebRTCMesh}
+\end{figure}
+% TODO finish talks about mesh topology, maybe bring a graph of resource usage in the mesh topology
+\indent \par Cea mai simplă topologie este cea mesh (engl. \textit{pânză}) \ref{WebRTCMesh}, în care toți clienții sunt interconectați. Într-o conversație de \(n\) utilizatori, fiecare utilizator va avea \(n-1\) conexiuni deschise, în total fiind \(n*(n-1)\) conexiuni. Această metodă este potrivită doar în pentru \(n\) mic, deoarece fiecare nod va trebui să decodeze \(n-1\) fluxuri de date audio-video, ceea ce crește radical consumul resurselor de către procesor, cu atât mai mult dacă imaginile sunt de calitate înaltă. De asemenea, lățimea de bandă necesară este ridicată, datorită multiplelor fluxuri. În schimb, nu este nevoie de server intermediar, ceea ce reduce costurile de implementare.
+\indent \par Se poate particulariza acest scenariu în cazul în care nu toți partajează conținut. Așadar, unele conexiuni nu mai sunt necesare, iar topologia va deveni, după caz, arborescentă. Mai departe, se poate modela în așa fel încât gradul fiecărui nod să fie redus, iar lățimea de bandă folosită să fie scăzută.
+
+\subsubsection{Stea}
+\label{sec:ch3sec1subsec2subsubsec2}
+\indent \par O altă topologie des întâlnită în implementările aplicațiilor WebRTC este cea de tip stea. În acest caz, fiecare pereche de noduri va fi intermediată de către un server media. Acest server poate manipula conținutul de la fiecare nod, să îl unească într-un singur set de date, sau să îl redistribuie fiecăruia așa cum este. În primul caz, avem de a face cu un multipoint control unit (MCU) \ref{WebRTCStarMCU}, iar în al doilea cu un selective forwarding unit (SFU) \ref{WebRTCStarSFU}.
+\begin{figure}[H]
+    \centering
+    \scalebox{0.65}{\input{figures/webrtc_star_mcu.pdf_tex}}
+    \caption{Topologie de tip stea cu server MCU}
+    \label{WebRTCStarMCU}
+\end{figure}
+\indent \par Un avantaj major în cazul topologiei cu server MCU este că fiecare nod trimite și primește câte un singur flux audio-video, ceea ce duce la o economisire de resurse utilizate și de lățime de bandă. Dar există și dezavantaje, și anume, că serverul media va fi consumatorul de resurse, deoarece lui i se atribuie sarcina de a decoda și multiplexa conținutul, ceea ce duce la costuri mai mari de întreținere. Fiind o singură imagine primită, aceasta va fi dificil de prelucrat de către client.
+\indent \par Se observă că serverul de signaling poate exista independent de cel media, datorită independenței responsabilităților sale și a posibilității de a specifica mai multe servere media din fiecare nod.
+\begin{figure}[H]
+    \centering
+    \scalebox{0.65}{\input{figures/webrtc_star_sfu.pdf_tex}}
+    \caption{Topologie de tip stea cu server SFU}
+    \label{WebRTCStarSFU}
+\end{figure}
+\indent \par Serverul SFU din topologia de mai sus va fi mai puțin costisitor de întreținut față de unul MCU, deoarece consumul de resurse este redus, nemaifiind necesară procesarea datelor. Însă, într-o sesiune cu \(n\) participanți, fiecare va recepționa \(n-1\) fluxuri de date și va trasmite unul, ceea ce crește lățimea de bandă considerabil față de MCU, dar oferă un avantaj clar față de topologia mesh. O îmbunătățire ar putea reprezenta simulcast SFU, prin care fiecare client va transmite imaginea la calități diferite (în condițiile în care toți suportă același codec), dar va cere de la serverul SFU imaginea de calitate potrivită lățimii sale de bandă \cite{SFU2020}. Astfel, clienții care nu dispun de o lățime de bandă largă nu vor compromite calitatea imaginii celor care dispun \cite{SFU2020}. De exemplu, avem patru participanți, doi dintre ei folosind un telefon conectat la date mobile, iar ceilalți conectați de pe laptopuri la rețeaua de acasă. Cei conectați de pe telefoane vor transmite doar imagini de calitate joasă, iar cei de pe laptopuri vor transmite imagini și de calitate înaltă. Cei din urmă își vor vedea imaginile la calitate înaltă, iar ceilalți vor vedea imaginile de la laptopuri la calitate joasă.
 
 
-\section{ICE și NAT traversal}
+\subsubsection{Hibrid}
+\indent \par Se pot combina avantajele celor două topologii prezentate anterior, rezultând o distribuție mai eficientă a resurselor utilizate \ref{WebRTCHybrid}. Implicarea unor topologii de tip mesh unite între ele într-o manieră de tip stea are un compromis pe partea latenței, deoarece datele vor avea un drum mai lung de parcurs până la fiecare destinație, însă libertatea de a decide conexiunile directe între participanți este a dezvoltatorului, iar optimizările pe care acesta le poate realiza sunt numeroase. Folosind algoritmi de flux, se poate rezolva problema lățimii de bandă utilizate, iar prin algoritmi de distanță minimă (ex. Bellman-Kalaba), și cea a latenței.
+\begin{figure}[H]
+    \centering
+    \scalebox{0.65}{\input{figures/webrtc_hybrid.pdf_tex}}
+    \caption{Topologie de tip hibrid cu server MCU}
+    \label{WebRTCHybrid}
+\end{figure}
+
+\section{ICE și NAT traversal. Servere STUN și TURN}
 \label{sec:ch3sec2}
+\indent \par După realizarea schimbului de descriptori SDP, participanții trebuie să stabilească modul de comunicare între ei, deoarece pe traseu poate traversa unul sau mai multe NAT-uri (Network Address Translator), iar adresele lor IP dintr-o rețea nu vor mai fi valide pe altă rețea \cite{rfc8445}. Prin urmare, transportul de date nu ar mai putea fi posibil în mod direct. Pentru aceasta, s-a realizat un protocol numit Interactive Connectivity Estabilishment (ICE). Ideea principală a ICE este că se va folosi un server intermediar (STUN sau TURN), pe care fiecare agent (nod) are o varietate de adrese candidat \cite{rfc8445}.
+\indent \par Teoretic, oricare adresă candidat al unui agent poate fi folosită pentru a comunica cu oricare din adresele candidat ale altui agent. În realitate, majoritatea din combinațiile de adrese nu vor funcționa. De exemplu, dacă amândouă nodurile se află în spatele unor NAT-uri, prin adresele interfețelor atașate direct (de pe partea publică a NAT-urilor) nu vor putea comunica direct \cite{rfc8445}. ICE are tocmai acest rol: de a încerca fiecare pereche posibilă de adrese până găsește una sau mai multe care funcționează.
+\subsection{Tipuri de candidați}
+\indent \par Pentru a face posibil schimbul de conexiuni, un agent trebuie să colecteze una sau mai multe adrese candidat. Adresele candidat sunt perechi de adresă IP și de port pe un protocol de transport specific (de obicei UDP). Există patru tipuri de candidați:
+\begin{itemize}
+    \item \textit{host} (engl. \textit{gazdă}), care poate comunica direct; este obținut direct de la interfețele locale de rețea (Ethernet, Wi-Fi);
+    \item \textit{server-reflexive}, candidat obținut de la un server STUN; este adresa publică a NAT-ului, împreună cu portul pe care NAT-ul îl atribuie când un client trimite cererea de alocare (binding request) către serverul STUN sau TURN \cite{rfc5245};
+    \item \textit{peer-reflexive}, candidat obținut de la un server STUN; este adresa publică a NAT-ului, împreună cu portul pe care NAT-ul îl atribuie când clientul primește răspunsul la un binding request de la server, în fazele mai târzii ale ICE;
+    \item \textit{relay} (engl. \textit{releu}), candidat obținut de la un server TURN; va conține adresa serverului TURN care va fi responsabil de a retrimite conținutul către cealaltă parte \cite{rfc5245}.
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \scalebox{0.7}{\input{figures/ice_addresses.pdf_tex}}
+    \caption{Diagrama adreselor în traseul către serverul TURN}
+\end{figure}
+\indent \par De observat este că serverele STUN (Session Traversal Utilities for NAT) sunt mai simple decât cele TURN (Traversal Using Relays around NAT), deoarece ele nu au responsabilitatea de a primi pachete de la clienți și de a le redistribui. Cererea ce trebuie trimisă către STUN se numește \textit{binding request} (engl. \textit{cerere de legare}), iar cea către TURN se numește \textit{allocate request} (engl. \textit{cerere de alocare}), cea din urmă având rolul de a aloca un relay pe serverul TURN. 
+\indent \par De asemenea, nu se confunda serverele TURN cu cele SFU, deși responsabilitățile lor sunt similare. Clienții trebuie să se conecteze cu serverul SFU ca și cum s-ar conecta cu un alt client, așadar s-ar putea să fie nevoie de un server TURN pe traseul către SFU. Serverul TURN este folosit doar în cazul în care nu se pot conecta la candidații găsiți prin STUN, este un intermediar între clienți sau între clienți și un server media, deci nu poate înlocui un SFU și invers.
+\subsection{Obținerea candidaților}
+\indent \par Înainte de a proba fiecare conexiune, un agent ICE are nevoie de o listă de candidați. În primă fază, el listează adresele fiecărei interfețe de rețea existente (fizică precum Ethernet, Wi-Fi sau USB, sau virtuale, precum mecanisme de tunelare ca VPN) \cite{rfc8445}. Agentul obține fiecare candidat host prin legarea la un port UDP de pe adresa IP a fiecărei interfețe listate \cite{rfc8445}. 
+\indent \par Candidatul host este mereu asociat cu o componentă pentru care este candidat \cite{rfc8445}. Fiecare componentă are asociat un ID. Acest \textit{component ID} va avea valoarea 2 pentru un flux de date (stream) RTCP (RTP Control Protocol) dacă nu este multiplexat pe același port UDP \cite{rfc8445}. În caz contrar, va avea valoarea 1. Pentru RTP (Real-time Transport Protocol) va fi mereu valoarea 1 \cite{rfc8445}. În cazul în care agentul are \(K\) adrese IP și folosește candidați separați pentru RTP și RTCP, va avea \(2*K\) candidați host.
+\indent \par Urmează căutarea candidaților server-reflexive și a celor relay. Pentru aceasta, este nevoie de interogarea serverelor STUN și TURN specificate în listă. În unele situații, totuși, nu este nevoie de utilizarea lor \cite{rfc8445}. În acest caz, este recomandat să se implementeze această funcționalitate și să fie doar lăsată dezactivată, deoarece, în timp, se pot schimba cerințele \cite{rfc8445}. 
+\indent \par Când sunt specificate mai multe servere STUN sau TURN, agentul ar trebui să returneze candidații pentru cel puțin unul din ele \cite{rfc8445}. Va realiza perechi între fiecare candidat host și fiecare server STUN sau TURN, iar pentru fiecare pereche, va trimite un binding request sau un allocate request \cite{rfc8445}. Agentul va primi un binding sau allocate response \cite{rfc8445}. În cazul unei cereri de alocare, va primi un candidat server-reflexive și un candidat relay \cite{rfc8445}. În cazul în care această cerere eșuează din cauza resurselor insuficiente pe server, va încerca un binding request , care va returna doar candidatul server-reflexive \cite{rfc8445}.
+\indent \par Procesul de căutare este controlat de un contor, \(Ta\) \cite{rfc8445}. De fiecare dată când expiră acest contor, agentul poate iniția o nouă cerere către STUN sau TURN. Poate reiniția cererile și în cazul în care acestea returnează o eroare, însă nu la un interval mai scurt de \(Ta\) \cite{rfc8445}. 
+\begin{figure}
+    \centering
+    \scalebox{0.75}{\input{figures/webrtc_sdp_ice_exchange.pdf_tex}}
+    \caption{Schimbul de candidați ICE în cadrul unei sesiuni WebRTC}
+\end{figure}
+\subsection{Calcularea parametrilor pentru candidați}
+\indent \par După obținerea candidaților, acesta va calcula un \textit{foundation} pentru fiecare. Acest \textit{foundation} este identic pentru candidații care au aceeași adresă IP (chiar dacă porturile sunt distincte), sunt de același tip, au același protocol de transport (TCP sau UDP), sau dacă adresele IP ale serverelor STUN sau TURN de pe care au fost obținuți sunt identice \cite{rfc8445}.
+\indent \par Agentul va calcula și prioritatea fiecărui candidat \cite{rfc8445}. Formula recomandată după care se calculează prioritatea este:
+\[prioritate = 2^24 * preferin\cb{t}\breve{a}Tip + 2^8 * preferin\cb{t}\breve{a}Local\breve{a} + 2^0 * (256 - componentID)\]
+\par \(preferin\cb{t}\breve{a}Tip\) va fi o valoare între 0 și 126, distinctă pentru fiecare tip de candidat și neapărat mai mare pentru tipul peer-reflexive decât cel server-reflexive. \(preferin\cb{t}\breve{a}Local\breve{a}\) va avea valoarea între 0 și 65535 dacă există adrese IP distincte între candidați sau 65535 dacă există doar una singură. \(componentID\) va fi ID-ul componentei asociate \cite{rfc8445}.
+\subsection{Schimbul de informații despre candidați}
+\indent \par Agenții ICE trebuie să stabilească modalitatea prin care vor realiza schimbul de informații despre candidați (pentru WebRTC se va folosi, de obicei, WebSocket prin serverul de signaling). De asemenea, trebuie să transmită următoarele informații:
+\begin{itemize}
+    \item lista de candidați. Pentru fiecare candidat:
+    \begin{itemize}
+        \item adresa IP și portul specific protocolului de transport;
+        \item protocolul de transport;
+        \item \textit{foundation}-ul ca secvență de cel mult 32 de caractere;
+        \item component ID-ul;
+        \item prioritatea;
+        \item tipul candidatului (\textit{host}; \textit{srflx} - server-reflexive; \textit{prflx} - peer-reflexive; \textit{relay});
+        \item adresa și portul relative (opționale);
+        \item alte atribute (în cazul unei eventuale extensii ale protocolului ICE).
+    \end{itemize}
+    \item Tipul Lite sau Full al candidatului.
+    \item Valoarea de stimulare a verificării conexiunii (opțională dacă agentul optează pentru valoarea implicită).
+    \item Extensii la nivel de flux media sau sesiune (opțiuni ICE) \cite{rfc8445}.
+\end{itemize}
+\subsection{ICE mismatch}
+\indent \par În unele cazuri, poate apărea fenomenul de mismatch (engl. \textit{nepotrivire}), în care un intermediar, cum ar fi un application-level gateway, poate altera informațiile despre candidații ICE \cite{rfc8445}. În această situație, agentul cu care se face schimbul trebuie să poată detecta această alterare și să îl informeze \cite{rfc8445}.
 
-\section{Streaming. Protocoale RTP și SDP}
+\section{Streaming. Protocoalele SDP și RTP}
 \label{sec:ch3sec3}
 
 \section{Implementare în browser}
 \label{sec:ch3sec4}
-\indent \par WebRTC este furnizat cu fiecare browser web popular, precum și cu framework-urile derivate (ex. Electron). Este metoda principală de a dezvolta aplicații noi de conferințe video. Expune mai multe API-uri JavaScript ușor de folosit, fiecare responsabil de setul său specific de funcții, precum: cameră și microfon, conținutul ecranului și conexiuni de la egal la egal.
+\indent \par WebRTC este furnizat cu fiecare browser web popular, precum și cu framework-urile derivate (ex. Electron). Este metoda principală de a dezvolta aplicații noi de conferințe video. Expune mai multe API-uri JavaScript ușor de folosit, fiecare responsabil de setul său specific de funcții, precum: cameră și microfon, partajarea conținutului ecranului și conexiuni de la egal la egal (peer-to-peer).
 
 \subsection{Capturarea conținutului media}
 \label{sec:ch2sec4subsec1}
@@ -48,6 +142,7 @@
 
 \indent \par După crearea unei instanțe de \texttt{RTCPeerConnection}, track-urile de stream trebuie adăugate. Revenind la dispozitivele media și la obiectele sale \texttt{MediaStream}, track-urile sunt conținute într-o listă accesibilă din funcția \texttt{getTracks()}. Acestea pot fi adăugate la conexiunea peer cu \texttt{addTrack}, care cere instanța streamului \cite{WebStream2014}.
 \indent \par Peer-ul care răspunde nu conține o instanță proprie de \texttt{MediaStream} care să conțină track-urile, așadar trebuie să creeze una și să adauge track-urile remote la ea. Un handler de evenimente numit \texttt{ontrack} trebuie adăugat. Gestionează câte un track odată. În acest caz, handler-ul va adăuga la instanța nou creată de \texttt{MediaStream}, care va fi setată ca obiectul sursă al elementului \texttt{video}.
+% TODO vorbeste despre renegociere la stergerea de track-uri
 
 \subsection{Obținerea candidaților ICE}
 \label{sec:ch3sec4subsec4}
