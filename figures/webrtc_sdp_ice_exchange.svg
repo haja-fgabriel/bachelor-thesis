@@ -20,15 +20,16 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      height="715px"
-     inkscape:zoom="0.83387102"
-     inkscape:cx="411.93421"
-     inkscape:cy="469.49707"
+     inkscape:zoom="1.1792717"
+     inkscape:cx="273.47387"
+     inkscape:cy="207.33135"
      inkscape:window-width="1920"
      inkscape:window-height="1027"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g6138" />
+     inkscape:current-layer="g6020-2"
+     showguides="false" />
   <desc
      id="desc5808">participant%20Client%20A%0Aparticipant%20STUN%0Aparticipant%20TURN%0Aparticipant%20Server%20signaling%0Aparticipant%20Client%20B%0A%0AClient%20A-%3ESTUN%3A%20Cine%20sunt%3F%0ASTUN-%3EClient%20A%3A%20NAT%20simetric%0AClient%20A-%3ETURN%3A%20d%C4%83-mi%20canalul%0AClient%20A-%3EServer%20signaling%3A%20SDP%20oferit%0AServer%20signaling-%3EClient%20B%3A%20SDP%20oferit%0AClient%20B-%3EServer%20signaling%3A%20SDP%20r%C4%83spuns%0AServer%20signaling-%3EClient%20A%3A%20SDP%20r%C4%83spuns%0AClient%20A-%3EServer%20signaling%3A%20Candidat%20ICE%20(A)%0AServer%20signaling-%3EClient%20B%3A%20Candidat%20ICE%20(A)%0AClient%20B-%3EServer%20signaling%3A%20Candidat%20ICE%20(B)%0AServer%20signaling-%3EClient%20A%3A%20Candidat%20ICE%20(B)%0AClient%20B-%3ESTUN%3A%20Cine%20sunt%3F%0ASTUN-%3EClient%20B%3A%208.9.10.11%3A1234</desc>
   <defs
@@ -624,12 +625,13 @@
          font-style="normal"
          font-weight="normal"
          text-decoration="normal"
-         x="181.22003"
-         y="376.42917"
+         x="158.32454"
+         y="376.00519"
          text-anchor="start"
          dominant-baseline="alphabetic"
          xml:space="preserve"
-         id="text6018-1">NAT simetric</text>
+         id="text6018-1"
+         style="font-size:12px">NAT simetric (eroare)</text>
     </g>
     <g
        id="g6028"

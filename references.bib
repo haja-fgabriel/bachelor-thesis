@@ -100,11 +100,37 @@ year = {2015},
     note = {Online; accessed 13 April 2021}
  }
 
+@misc{TeamsReact2018,
+  author       = {Mitra, Abhik},
+  title        = {{Moving a huge AngularJS App to React, progressively at Microsoft Scale}},
+  howpublished = {\url{https://hasgeek.com/jsfoo/2019-pune/sub/moving-a-huge-angularjs-app-to-react-progressively-X3igB6hPLDNnSfinWmpZER}},
+  year         = {2018}
+}
+
 @misc{Telectroscope1877,
   author       = {{Lange, André}},
   title        = {{L'attribution imaginaire de l'invention du télectroscope  à Graham Bell par l'Abbé Moigno et Louis Figuier (1877-1878).}},
   year         = {2020},
   howpublished = {\url{https://www.histv.net/telectroscope1877}}
+}
+
+@misc{JitsiArchitecture,
+  title        = {Architecture},
+  journal      = {Jitsi Meet Handbook},
+  howpublished = {\url{https://jitsi.github.io/handbook/docs/architecture}}
+}
+
+@misc{JitsiVideobridge,
+  author       = {Grozev, Boris and Ivov, Emil},
+  title        = {Jitsi Videobridge Performance Evaluation},
+  howpublished = {\url{https://jitsi.org/jitsi-videobridge-performance-evaluation/}}
+}
+
+@misc{JitsiBridgeCascading,
+  author       = {Ivov, Emil},
+  title        = {{Jitsi Meet, now with geographical bridge cascading}},
+  howpublished = {\url{https://jitsi.org/blog/jitsi-meet-now-with-geographical-bridge-cascading/}},
+  year         = {2018}
 }
 
 @misc{Electroscope1878,
@@ -161,6 +187,22 @@ year = {2015},
   howpublished = {\url{https://vidconf.net/}}
 }
 
+@misc{ZoomWebRTC,
+  author       = {Hancke, Philipp},
+  title        = {{How Zoom’s web client avoids using WebRTC (DataChannel Update)}},
+  journal      = {webrtcHacks}, 
+  howpublished = {\url{https://webrtchacks.com/zoom-avoids-using-webrtc/}},
+  year         = {2019}
+}
+
+@article{ZoomScalability,
+  author       = {Sachdeva, Vikram},
+  title        = {{Zoom — Video conf app at scale}},
+  journal      = {Medium},
+  url          = {https://medium.com/@vsachdeva/zoom-video-conf-tool-at-scale-e86289c290b8},
+  year         = {2020}
+}
+
 @article{Nyman2013,
   author          = {Nyman, Robert},
   title           = {{Hello Chrome, it's Firefox calling!}},
@@ -201,6 +243,36 @@ year = {2015},
 	abstract =	{},
 }
 
+@misc{rfc3550,
+	series =	{Request for Comments},
+	number =	3550,
+	howpublished =	{RFC 3550},
+	publisher =	{RFC Editor},
+	doi =		{10.17487/RFC3550},
+	url =		{https://rfc-editor.org/rfc/rfc3550.txt},
+        author =	{Henning Schulzrinne and Stephen L. Casner and Ron Frederick and Van Jacobson},
+	title =		{{RTP: A Transport Protocol for Real-Time Applications}},
+	pagetotal =	104,
+	year =		2003,
+	month =		jul,
+	abstract =	{This memorandum describes RTP, the real-time transport protocol. RTP provides end-to-end network transport functions suitable for applications transmitting real-time data, such as audio, video or simulation data, over multicast or unicast network services. RTP does not address resource reservation and does not guarantee quality-of- service for real-time services. The data transport is augmented by a control protocol (RTCP) to allow monitoring of the data delivery in a manner scalable to large multicast networks, and to provide minimal control and identification functionality. RTP and RTCP are designed to be independent of the underlying transport and network layers. The protocol supports the use of RTP-level translators and mixers. Most of the text in this memorandum is identical to RFC 1889 which it obsoletes. There are no changes in the packet formats on the wire, only changes to the rules and algorithms governing how the protocol is used. The biggest change is an enhancement to the scalable timer algorithm for calculating when to send RTCP packets in order to minimize transmission in excess of the intended rate when many participants join a session simultaneously. {[}STANDARDS-TRACK{]}},
+}
+
+@misc{rfc4566,
+	series =	{Request for Comments},
+	number =	4566,
+	howpublished =	{RFC 4566},
+	publisher =	{RFC Editor},
+	doi =		{10.17487/RFC4566},
+	url =		{https://rfc-editor.org/rfc/rfc4566.txt},
+        author =	{Colin Perkins and Mark J. Handley and Van Jacobson},
+	title =		{{SDP: Session Description Protocol}},
+	pagetotal =	49,
+	year =		2006,
+	month =		jul,
+	abstract =	{This memo defines the Session Description Protocol (SDP). SDP is intended for describing multimedia sessions for the purposes of session announcement, session invitation, and other forms of multimedia session initiation. {[}STANDARDS-TRACK{]}},
+}
+
 @misc{rfc5245,
 	series =	{Request for Comments},
 	number =	5245,
@@ -214,6 +286,21 @@ year = {2015},
 	year =		2010,
 	month =		apr,
 	abstract =	{This document describes a protocol for Network Address Translator (NAT) traversal for UDP-based multimedia sessions established with the offer/answer model. This protocol is called Interactive Connectivity Establishment (ICE). ICE makes use of the Session Traversal Utilities for NAT (STUN) protocol and its extension, Traversal Using Relay NAT (TURN). ICE can be used by any protocol utilizing the offer/answer model, such as the Session Initiation Protocol (SIP). {[}STANDARDS-TRACK{]}},
+}
+
+@misc{rfc5389,
+	series =	{Request for Comments},
+	number =	5389,
+	howpublished =	{RFC 5389},
+	publisher =	{RFC Editor},
+	doi =		{10.17487/RFC5389},
+	url =		{https://rfc-editor.org/rfc/rfc5389.txt},
+        author =	{Philip Matthews and Jonathan Rosenberg and Dan Wing and Rohan Mahy},
+	title =		{{Session Traversal Utilities for NAT (STUN)}},
+	pagetotal =	51,
+	year =		2008,
+	month =		oct,
+	abstract =	{Session Traversal Utilities for NAT (STUN) is a protocol that serves as a tool for other protocols in dealing with Network Address Translator (NAT) traversal. It can be used by an endpoint to determine the IP address and port allocated to it by a NAT. It can also be used to check connectivity between two endpoints, and as a keep-alive protocol to maintain NAT bindings. STUN works with many existing NATs, and does not require any special behavior from them. STUN is not a NAT traversal solution by itself. Rather, it is a tool to be used in the context of a NAT traversal solution. This is an important change from the previous version of this specification (RFC 3489), which presented STUN as a complete solution. This document obsoletes RFC 3489. {[}STANDARDS-TRACK{]}},
 }
 
 @misc{rfc8445,
@@ -300,6 +387,24 @@ year = {2015},
   eprint    = {cs/0412017},
   timestamp = {Mon, 13 Aug 2018 16:47:34 +0200},
   biburl    = {https://dblp.org/rec/journals/corr/abs-cs-0412017.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{MacMillan2021,
+  author    = {MacMillan, Kyle and
+               Mangla, Tarun and
+               Saxon, James and
+               Feamster, Nick},
+  title     = {{Measuring the Performance and Network Utilization of Popular Video
+               Conferencing Applications}},
+  journal   = {CoRR},
+  volume    = {abs/2105.13478},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2105.13478},
+  archivePrefix = {arXiv},
+  eprint    = {2105.13478},
+  timestamp = {Tue, 01 Jun 2021 18:07:59 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2105-13478.bib},
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
