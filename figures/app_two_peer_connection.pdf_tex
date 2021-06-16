@@ -1,0 +1,90 @@
+%% Creator: Inkscape 1.1 (c68e22c387, 2021-05-23), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'app_two_peer_connection.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{450.77791925bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.17379575)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{figures/app_two_peer_connection.pdf}}%
+    \put(0.03166278,1.12518391){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Peer 1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{figures/app_two_peer_connection.pdf}}%
+    \put(0.48438063,1.12518391){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Server\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{figures/app_two_peer_connection.pdf}}%
+    \put(0.89647393,1.12518391){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Peer 2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{figures/app_two_peer_connection.pdf}}%
+    \put(0.18382991,1.01918833){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}[request]rtc:room:join\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{figures/app_two_peer_connection.pdf}}%
+    \put(0.10383226,0.94308893){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}[response]rtc:joining-as-broadcaster\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{figures/app_two_peer_connection.pdf}}%
+    \put(0.61623547,0.86698953){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}[request]rtc:room:join\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{figures/app_two_peer_connection.pdf}}%
+    \put(0.56539877,0.79089013){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}[response]rtc:joining-as-viewer\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{figures/app_two_peer_connection.pdf}}%
+    \put(0.19761542,0.71479074){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}[webrtc]make-offer\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{figures/app_two_peer_connection.pdf}}%
+    \put(0.20099183,0.63869136){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}[webrtc]send-offer\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{figures/app_two_peer_connection.pdf}}%
+    \put(0.63339737,0.63869133){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}[webrtc]send-offer\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{figures/app_two_peer_connection.pdf}}%
+    \put(0.62052894,0.48649257){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}[webrtc]answer-offer\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{figures/app_two_peer_connection.pdf}}%
+    \put(0.18812337,0.48649254){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}[webrtc]answer-offer\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{figures/app_two_peer_connection.pdf}}%
+    \put(0.18313914,0.33429377){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}[webrtc]ice-candidate\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{figures/app_two_peer_connection.pdf}}%
+    \put(0.61554468,0.33429374){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}[webrtc]ice-candidate\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{figures/app_two_peer_connection.pdf}}%
+    \put(0.61554468,0.18209503){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}[webrtc]ice-candidate\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{figures/app_two_peer_connection.pdf}}%
+    \put(0.18313914,0.182095){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}[webrtc]ice-candidate\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{figures/app_two_peer_connection.pdf}}%
+  \end{picture}%
+\endgroup%

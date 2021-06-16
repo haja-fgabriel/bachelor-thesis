@@ -1,0 +1,79 @@
+%% Creator: Inkscape 1.1 (c68e22c387, 2021-05-23), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'app_linked_topology.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{581.97103788bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.74301754)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{figures/app_linked_topology.pdf}}%
+    \put(0.72031665,0.65565999){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}server de signaling\end{tabular}}}}%
+    \put(0.71837067,0.49856941){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}client\end{tabular}}}}%
+    \put(0.71853009,0.36227635){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}flux de pachete RTP\end{tabular}}}}%
+    \put(0.71758806,0.25545372){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}conexiune WebSocket\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{figures/app_linked_topology.pdf}}%
+    \put(0.03282684,0.03581552){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}camera '1'\end{tabular}}}}%
+    \put(0.35803841,0.0127479){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}camera '2'\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{figures/app_linked_topology.pdf}}%
+    \put(0.06725353,0.46540058){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}downloadSpeed: 2000 KB/s\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{figures/app_linked_topology.pdf}}%
+    \put(0.0650083,0.30112546){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}downloadSpeed: 6000 KB/s\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{figures/app_linked_topology.pdf}}%
+    \put(0.0650083,0.1506958){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}downloadSpeed: 2000 KB/s\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{figures/app_linked_topology.pdf}}%
+    \put(0.39368722,0.58181486){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}downloadSpeed: 2000 KB/s\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{figures/app_linked_topology.pdf}}%
+    \put(0.40167844,0.42334188){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}downloadSpeed: 8800 KB/s\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{figures/app_linked_topology.pdf}}%
+    \put(0.40361534,0.27684899){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}downloadSpeed: 8200 KB/s\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{figures/app_linked_topology.pdf}}%
+    \put(0.4073676,0.10704403){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}downloadSpeed: 700 KB/s\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

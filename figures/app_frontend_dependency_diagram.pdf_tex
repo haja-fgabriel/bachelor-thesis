@@ -1,0 +1,93 @@
+%% Creator: Inkscape 1.1 (c68e22c387, 2021-05-23), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'app_frontend_dependency_diagram.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{750.37572678bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.34382775)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{figures/app_frontend_dependency_diagram.pdf}}%
+    \put(0.50000006,0.31176023){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{src}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{figures/app_frontend_dependency_diagram.pdf}}%
+    \put(0.67797711,0.27583396){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{rtc}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{figures/app_frontend_dependency_diagram.pdf}}%
+    \put(0.73419361,0.23990768){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{core}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{figures/app_frontend_dependency_diagram.pdf}}%
+    \put(0.90551627,0.23990768){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{utils}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{figures/app_frontend_dependency_diagram.pdf}}%
+    \put(0.90551627,0.01423745){\color[rgb]{0.75294118,0.75294118,0.75294118}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}assert\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{figures/app_frontend_dependency_diagram.pdf}}%
+    \put(0.17497599,0.19386882){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}App.js\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{figures/app_frontend_dependency_diagram.pdf}}%
+    \put(0.3220225,0.15395074){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}RoomControlPanel.js\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{figures/app_frontend_dependency_diagram.pdf}}%
+    \put(0.3220225,0.19519942){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}VideoBroadcastItem.js\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{figures/app_frontend_dependency_diagram.pdf}}%
+    \put(0.46408243,0.19653002){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}VideoProvider.js\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{figures/app_frontend_dependency_diagram.pdf}}%
+    \put(0.59049331,0.19919123){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}useWebRTC.js\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{figures/app_frontend_dependency_diagram.pdf}}%
+    \put(0.73419361,0.20451364){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}RTCForwardingPeer.js\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{figures/app_frontend_dependency_diagram.pdf}}%
+    \put(0.17497599,0.2351175){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}index.css\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{figures/app_frontend_dependency_diagram.pdf}}%
+    \put(0.06253833,0.2351175){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}index.js\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{figures/app_frontend_dependency_diagram.pdf}}%
+    \put(0.17497599,0.27636619){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}reportWebVitals.js\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{figures/app_frontend_dependency_diagram.pdf}}%
+    \put(0.90551627,0.20451364){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}test-connection.js\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{figures/app_frontend_dependency_diagram.pdf}}%
+    \put(0.73419361,0.16326495){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}RTCService.js\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{figures/app_frontend_dependency_diagram.pdf}}%
+    \put(0.73419361,0.12201627){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}index.js\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{figures/app_frontend_dependency_diagram.pdf}}%
+    \put(0.73419361,0.08076759){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}oldrtcApi.js\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

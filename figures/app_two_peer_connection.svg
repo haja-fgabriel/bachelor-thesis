@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="614"
+   height="714"
+   id="svg302"
+   sodipodi:docname="app_two_peer_connection.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview304"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.1792717"
+     inkscape:cx="315.02494"
+     inkscape:cy="162.38836"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g82" />
+  <desc
+     id="desc2">Peer%201-%3EWebSocketWorker%3A%20%5Brequest%5Drtc%3Aroom%3Ajoin%0AWebSocketWorker-%3EPeer%201%3A%20%5Bresponse%5Drtc%3Ajoining-as-broadcaster%0APeer%202-%3EWebSocketWorker%3A%20%5Brequest%5Drtc%3Aroom%3Ajoin%0AWebSocketWorker-%3EPeer%202%3A%20%5Bresponse%5Drtc%3Ajoining-as-viewer%0AWebSocketWorker-%3EPeer%201%3A%20%5Bwebrtc%5Dmake-offer%0APeer%201-%3EWebSocketWorker%3A%20%5Bwebrtc%5Dsend-offer%0AWebSocketWorker-%3EPeer%202%3A%20%5Bwebrtc%5Dsend-offer%0APeer%202-%3EWebSocketWorker%3A%20%5Bwebrtc%5Danswer-offer%0AWebSocketWorker-%3EPeer%201%3A%20%5Bwebrtc%5Danswer-offer%0APeer%201-%3EWebSocketWorker%3A%20%5Bwebrtc%5Dice-candidate%0AWebSocketWorker-%3EPeer%202%3A%20%5Bwebrtc%5Dice-candidate%0APeer%202-%3EWebSocketWorker%3A%20%5Bwebrtc%5Dice-candidate%0AWebSocketWorker-%3EPeer%201%3A%20%5Bwebrtc%5Dice-candidate</desc>
+  <defs
+     id="defs4" />
+  <g
+     id="g300">
+    <g
+       id="g6" />
+    <g
+       id="g8" />
+    <g
+       id="g10" />
+    <g
+       id="g12" />
+    <g
+       id="g14" />
+    <g
+       id="g16" />
+    <g
+       id="g18" />
+    <g
+       id="g20" />
+    <g
+       id="g22" />
+    <g
+       id="g24" />
+    <g
+       id="g26" />
+    <g
+       id="g28" />
+    <g
+       id="g30" />
+    <g
+       id="g36" />
+    <g
+       id="g44">
+      <path
+         fill="none"
+         stroke="black"
+         paint-order="fill stroke markers"
+         d=" M 47.48756493069532 55.049635120999994 L 47.48756493069532 714.9918484409999"
+         stroke-miterlimit="10"
+         stroke-width="1.3612669416666667"
+         stroke-dasharray="12.565541,5.445067766666667"
+         id="path38" />
+      <path
+         fill="none"
+         stroke="black"
+         paint-order="fill stroke markers"
+         d=" M 324.90623084332555 55.049635120999994 L 324.90623084332555 714.9918484409999"
+         stroke-miterlimit="10"
+         stroke-width="1.3612669416666667"
+         stroke-dasharray="12.565541,5.445067766666667"
+         id="path40" />
+      <path
+         fill="none"
+         stroke="black"
+         paint-order="fill stroke markers"
+         d=" M 567.2712315948229 55.049635120999994 L 567.2712315948229 714.9918484409999"
+         stroke-miterlimit="10"
+         stroke-width="1.3612669416666667"
+         stroke-dasharray="12.565541,5.445067766666667"
+         id="path42" />
+    </g>
+    <g
+       id="g82">
+      <path
+         fill="none"
+         stroke="none"
+         id="path46" />
+      <g
+         id="g50">
+        <path
+           fill="white"
+           stroke="black"
+           paint-order="fill stroke markers"
+           d=" M 8.167601650000002 10.944586211000003 L 86.80752821139063 10.944586211000003 L 86.80752821139063 55.049635120999994 L 8.167601650000002 55.049635120999994 L 8.167601650000002 10.944586211000003 Z"
+           stroke-miterlimit="10"
+           stroke-width="2.613632528"
+           stroke-dasharray=""
+           id="path48" />
+      </g>
+      <g
+         id="g56">
+        <g
+           id="g52" />
+        <text
+           fill="black"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="11pt"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="25.891297230500008"
+           y="38.71443182099999"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text54">Peer 1</text>
+      </g>
+      <path
+         fill="none"
+         stroke="none"
+         id="path58" />
+      <g
+         id="g62"
+         transform="matrix(0.60527384,0,0,1.0060303,128.01541,-0.19898226)">
+        <path
+           fill="#ffffff"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 246.34864,10.944586 H 403.46382 V 55.049635 H 246.34864 Z"
+           stroke-miterlimit="10"
+           stroke-width="2.61363"
+           stroke-dasharray="none"
+           id="path60" />
+      </g>
+      <g
+         id="g68">
+        <g
+           id="g64" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="297.99158"
+           y="38.714432"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text66">Server</text>
+      </g>
+      <path
+         fill="none"
+         stroke="none"
+         id="path70" />
+      <g
+         id="g74">
+        <path
+           fill="white"
+           stroke="black"
+           paint-order="fill stroke markers"
+           d=" M 527.9512683141276 10.944586211000003 L 606.5911948755182 10.944586211000003 L 606.5911948755182 55.049635120999994 L 527.9512683141276 55.049635120999994 L 527.9512683141276 10.944586211000003 Z"
+           stroke-miterlimit="10"
+           stroke-width="2.613632528"
+           stroke-dasharray=""
+           id="path72" />
+      </g>
+      <g
+         id="g80">
+        <g
+           id="g76" />
+        <text
+           fill="black"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="11pt"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="545.6749638946276"
+           y="38.71443182099999"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text78">Peer 2</text>
+      </g>
+    </g>
+    <g
+       id="g292">
+      <g
+         id="g90">
+        <g
+           id="g86">
+          <rect
+             fill="white"
+             stroke="none"
+             x="114.89912135929559"
+             y="87.720041721"
+             width="142.5955530554297"
+             height="21.23576429"
+             id="rect84" />
+        </g>
+        <text
+           fill="black"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="11pt"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="117.34940185429559"
+           y="102.42172469100001"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text88">[request]rtc:room:join</text>
+      </g>
+      <g
+         id="g98">
+        <path
+           fill="none"
+           stroke="black"
+           paint-order="fill stroke markers"
+           d=" M 47.48756493069532 108.95580601099999 L 311.4569134596589 108.95580601099999"
+           stroke-miterlimit="10"
+           stroke-width="1.3612669416666667"
+           stroke-dasharray=""
+           id="path92" />
+        <g
+           transform="translate(324.90623084332555,108.95580601099999) translate(-324.90623084332555,-108.95580601099999)"
+           id="g96">
+          <path
+             fill="black"
+             stroke="none"
+             paint-order="stroke fill markers"
+             d=" M 311.29356142665887 102.14947130266665 L 324.90623084332555 108.95580601099999 L 311.29356142665887 115.76214071933333 Z"
+             id="path94" />
+        </g>
+      </g>
+      <g
+         id="g106">
+        <g
+           id="g102">
+          <rect
+             fill="white"
+             stroke="none"
+             x="66.817555502362"
+             y="133.458610961"
+             width="238.75868476929688"
+             height="21.23576429"
+             id="rect100" />
+        </g>
+        <text
+           fill="black"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="11pt"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="69.267835997362"
+           y="148.16029393099998"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text104">[response]rtc:joining-as-broadcaster</text>
+      </g>
+      <g
+         id="g114">
+        <path
+           fill="none"
+           stroke="black"
+           paint-order="fill stroke markers"
+           d=" M 324.90623084332555 154.694375251 L 60.93688231436199 154.694375251"
+           stroke-miterlimit="10"
+           stroke-width="1.3612669416666667"
+           stroke-dasharray=""
+           id="path108" />
+        <g
+           transform="translate(47.48756493069532,154.694375251) translate(-47.48756493069532,-154.694375251)"
+           id="g112">
+          <path
+             fill="black"
+             stroke="none"
+             paint-order="stroke fill markers"
+             d=" M 61.10023434736199 147.88804054266666 L 47.48756493069532 154.694375251 L 61.10023434736199 161.50070995933334 Z"
+             id="path110" />
+        </g>
+      </g>
+      <g
+         id="g122">
+        <g
+           id="g118">
+          <rect
+             fill="white"
+             stroke="none"
+             x="374.7909546913594"
+             y="179.197180201"
+             width="142.5955530554297"
+             height="21.23576429"
+             id="rect116" />
+        </g>
+        <text
+           fill="black"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="11pt"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="377.2412351863594"
+           y="193.898863171"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text120">[request]rtc:room:join</text>
+      </g>
+      <g
+         id="g130">
+        <path
+           fill="none"
+           stroke="black"
+           paint-order="fill stroke markers"
+           d=" M 567.2712315948229 200.432944491 L 338.3555482269922 200.432944491"
+           stroke-miterlimit="10"
+           stroke-width="1.3612669416666667"
+           stroke-dasharray=""
+           id="path124" />
+        <g
+           transform="translate(324.90623084332555,200.432944491) translate(-324.90623084332555,-200.432944491)"
+           id="g128">
+          <path
+             fill="black"
+             stroke="none"
+             paint-order="stroke fill markers"
+             d=" M 338.5189002599922 193.62660978266666 L 324.90623084332555 200.432944491 L 338.5189002599922 207.23927919933334 Z"
+             id="path126" />
+        </g>
+      </g>
+      <g
+         id="g138">
+        <g
+           id="g134">
+          <rect
+             fill="white"
+             stroke="none"
+             x="344.2362214149922"
+             y="224.935749441"
+             width="203.70501960816406"
+             height="21.23576429"
+             id="rect132" />
+        </g>
+        <text
+           fill="black"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="11pt"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="346.6865019099922"
+           y="239.637432411"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text136">[response]rtc:joining-as-viewer</text>
+      </g>
+      <g
+         id="g146">
+        <path
+           fill="none"
+           stroke="black"
+           paint-order="fill stroke markers"
+           d=" M 324.90623084332555 246.171513731 L 553.8219142111562 246.171513731"
+           stroke-miterlimit="10"
+           stroke-width="1.3612669416666667"
+           stroke-dasharray=""
+           id="path140" />
+        <g
+           transform="translate(567.2712315948229,246.171513731) translate(-567.2712315948229,-246.171513731)"
+           id="g144">
+          <path
+             fill="black"
+             stroke="none"
+             paint-order="stroke fill markers"
+             d=" M 553.6585621781562 239.36517902266667 L 567.2712315948229 246.171513731 L 553.6585621781562 252.97784843933334 Z"
+             id="path142" />
+        </g>
+      </g>
+      <g
+         id="g154">
+        <g
+           id="g150">
+          <rect
+             fill="white"
+             stroke="none"
+             x="123.18472774357294"
+             y="270.674318681"
+             width="126.024340286875"
+             height="21.23576429"
+             id="rect148" />
+        </g>
+        <text
+           fill="black"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="11pt"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="125.63500823857294"
+           y="285.37600165099997"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text152">[webrtc]make-offer</text>
+      </g>
+      <g
+         id="g162">
+        <path
+           fill="none"
+           stroke="black"
+           paint-order="fill stroke markers"
+           d=" M 324.90623084332555 291.910082971 L 60.93688231436199 291.910082971"
+           stroke-miterlimit="10"
+           stroke-width="1.3612669416666667"
+           stroke-dasharray=""
+           id="path156" />
+        <g
+           transform="translate(47.48756493069532,291.910082971) translate(-47.48756493069532,-291.910082971)"
+           id="g160">
+          <path
+             fill="black"
+             stroke="none"
+             paint-order="stroke fill markers"
+             d=" M 61.10023434736199 285.10374826266667 L 47.48756493069532 291.910082971 L 61.10023434736199 298.71641767933335 Z"
+             id="path158" />
+        </g>
+      </g>
+      <g
+         id="g170">
+        <g
+           id="g166">
+          <rect
+             fill="white"
+             stroke="none"
+             x="125.21407802433465"
+             y="316.412887921"
+             width="121.96563972535156"
+             height="21.23576429"
+             id="rect164" />
+        </g>
+        <text
+           fill="black"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="11pt"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="127.66435851933466"
+           y="331.11457089099997"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text168">[webrtc]send-offer</text>
+      </g>
+      <g
+         id="g178">
+        <path
+           fill="none"
+           stroke="black"
+           paint-order="fill stroke markers"
+           d=" M 47.48756493069532 337.648652211 L 311.4569134596589 337.648652211"
+           stroke-miterlimit="10"
+           stroke-width="1.3612669416666667"
+           stroke-dasharray=""
+           id="path172" />
+        <g
+           transform="translate(324.90623084332555,337.648652211) translate(-324.90623084332555,-337.648652211)"
+           id="g176">
+          <path
+             fill="black"
+             stroke="none"
+             paint-order="stroke fill markers"
+             d=" M 311.29356142665887 330.8423175026667 L 324.90623084332555 337.648652211 L 311.29356142665887 344.45498691933335 Z"
+             id="path174" />
+        </g>
+      </g>
+      <g
+         id="g186"
+         transform="translate(0,-45.738569)">
+        <g
+           id="g182">
+          <rect
+             fill="#ffffff"
+             stroke="none"
+             x="385.10593"
+             y="362.15146"
+             width="121.96564"
+             height="21.235764"
+             id="rect180" />
+        </g>
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="387.55618"
+           y="376.85315"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text184">[webrtc]send-offer</text>
+      </g>
+      <g
+         id="g194"
+         transform="translate(0,-45.738569)">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 324.90623,383.38722 H 553.82191"
+           stroke-miterlimit="10"
+           stroke-width="1.36127"
+           stroke-dasharray="none"
+           id="path188" />
+        <g
+           id="g192">
+          <path
+             fill="#000000"
+             stroke="none"
+             paint-order="stroke fill markers"
+             d="m 553.65856,376.58089 13.61267,6.80633 -13.61267,6.80634 z"
+             id="path190" />
+        </g>
+      </g>
+      <g
+         id="g202">
+        <g
+           id="g198">
+          <rect
+             fill="white"
+             stroke="none"
+             x="377.37148295063673"
+             y="407.890026401"
+             width="137.434496536875"
+             height="21.23576429"
+             id="rect196" />
+        </g>
+        <text
+           fill="black"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="11pt"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="379.82176344563675"
+           y="422.591709371"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text200">[webrtc]answer-offer</text>
+      </g>
+      <g
+         id="g210">
+        <path
+           fill="none"
+           stroke="black"
+           paint-order="fill stroke markers"
+           d=" M 567.2712315948229 429.125790691 L 338.3555482269922 429.125790691"
+           stroke-miterlimit="10"
+           stroke-width="1.3612669416666667"
+           stroke-dasharray=""
+           id="path204" />
+        <g
+           transform="translate(324.90623084332555,429.125790691) translate(-324.90623084332555,-429.125790691)"
+           id="g208">
+          <path
+             fill="black"
+             stroke="none"
+             paint-order="stroke fill markers"
+             d=" M 338.5189002599922 422.3194559826667 L 324.90623084332555 429.125790691 L 338.5189002599922 435.93212539933336 Z"
+             id="path206" />
+        </g>
+      </g>
+      <g
+         id="g218"
+         transform="translate(0,-45.738569)">
+        <g
+           id="g214">
+          <rect
+             fill="#ffffff"
+             stroke="none"
+             x="117.47965"
+             y="453.6286"
+             width="137.43449"
+             height="21.235764"
+             id="rect212" />
+        </g>
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="119.92993"
+           y="468.33029"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text216">[webrtc]answer-offer</text>
+      </g>
+      <g
+         id="g226"
+         transform="translate(0,-45.738569)">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 324.90623,474.86436 H 60.936882"
+           stroke-miterlimit="10"
+           stroke-width="1.36127"
+           stroke-dasharray="none"
+           id="path220" />
+        <g
+           id="g224">
+          <path
+             fill="#000000"
+             stroke="none"
+             paint-order="stroke fill markers"
+             d="m 61.100234,468.05803 -13.612669,6.80633 13.612669,6.80633 z"
+             id="path222" />
+        </g>
+      </g>
+      <g
+         id="g234">
+        <g
+           id="g230">
+          <rect
+             fill="white"
+             stroke="none"
+             x="114.48394496769403"
+             y="499.367164881"
+             width="143.42590583863281"
+             height="21.23576429"
+             id="rect228" />
+        </g>
+        <text
+           fill="black"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="11pt"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="116.93422546269403"
+           y="514.068847851"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text232">[webrtc]ice-candidate</text>
+      </g>
+      <g
+         id="g242">
+        <path
+           fill="none"
+           stroke="black"
+           paint-order="fill stroke markers"
+           d=" M 47.48756493069532 520.602929171 L 311.4569134596589 520.602929171"
+           stroke-miterlimit="10"
+           stroke-width="1.3612669416666667"
+           stroke-dasharray=""
+           id="path236" />
+        <g
+           transform="translate(324.90623084332555,520.602929171) translate(-324.90623084332555,-520.602929171)"
+           id="g240">
+          <path
+             fill="black"
+             stroke="none"
+             paint-order="stroke fill markers"
+             d=" M 311.29356142665887 513.7965944626667 L 324.90623084332555 520.602929171 L 311.29356142665887 527.4092638793334 Z"
+             id="path238" />
+        </g>
+      </g>
+      <g
+         id="g250"
+         transform="translate(0,-45.738569)">
+        <g
+           id="g246">
+          <rect
+             fill="#ffffff"
+             stroke="none"
+             x="374.37579"
+             y="545.10571"
+             width="143.4259"
+             height="21.235764"
+             id="rect244" />
+        </g>
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="376.82605"
+           y="559.80743"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text248">[webrtc]ice-candidate</text>
+      </g>
+      <g
+         id="g258">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 324.90623,520.60293 H 553.82191"
+           stroke-miterlimit="10"
+           stroke-width="1.36127"
+           stroke-dasharray="none"
+           id="path252" />
+        <g
+           transform="translate(567.2712315948229,566.341498411) translate(-567.2712315948229,-566.341498411)"
+           id="g256">
+          <path
+             fill="black"
+             stroke="none"
+             paint-order="stroke fill markers"
+             d=" M 553.6585621781562 559.5351637026666 L 567.2712315948229 566.341498411 L 553.6585621781562 573.1478331193333 Z"
+             id="path254" />
+        </g>
+      </g>
+      <g
+         id="g266">
+        <g
+           id="g262">
+          <rect
+             fill="white"
+             stroke="none"
+             x="374.3757782997578"
+             y="590.8443033609999"
+             width="143.42590583863281"
+             height="21.23576429"
+             id="rect260" />
+        </g>
+        <text
+           fill="black"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="11pt"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="376.82605879475784"
+           y="605.5459863309999"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text264">[webrtc]ice-candidate</text>
+      </g>
+      <g
+         id="g274">
+        <path
+           fill="none"
+           stroke="black"
+           paint-order="fill stroke markers"
+           d=" M 567.2712315948229 612.0800676509999 L 338.3555482269922 612.0800676509999"
+           stroke-miterlimit="10"
+           stroke-width="1.3612669416666667"
+           stroke-dasharray=""
+           id="path268" />
+        <g
+           transform="translate(324.90623084332555,612.0800676509999) translate(-324.90623084332555,-612.0800676509999)"
+           id="g272">
+          <path
+             fill="black"
+             stroke="none"
+             paint-order="stroke fill markers"
+             d=" M 338.5189002599922 605.2737329426666 L 324.90623084332555 612.0800676509999 L 338.5189002599922 618.8864023593333 Z"
+             id="path270" />
+        </g>
+      </g>
+      <g
+         id="g282"
+         transform="translate(0,-45.738569)">
+        <g
+           id="g278">
+          <rect
+             fill="#ffffff"
+             stroke="none"
+             x="114.48395"
+             y="636.58289"
+             width="143.4259"
+             height="21.235764"
+             id="rect276" />
+        </g>
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="116.93423"
+           y="651.28455"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text280">[webrtc]ice-candidate</text>
+      </g>
+      <g
+         id="g290"
+         transform="translate(0,-45.738569)">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 324.90623,657.81864 H 60.936882"
+           stroke-miterlimit="10"
+           stroke-width="1.36127"
+           stroke-dasharray="none"
+           id="path284" />
+        <g
+           id="g288">
+          <path
+             fill="#000000"
+             stroke="none"
+             paint-order="stroke fill markers"
+             d="m 61.100234,651.0123 -13.612669,6.80634 13.612669,6.80633 z"
+             id="path286" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g294" />
+    <g
+       id="g296" />
+    <g
+       id="g298" />
+  </g>
+</svg>
