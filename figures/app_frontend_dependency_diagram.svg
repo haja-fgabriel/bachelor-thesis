@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="752pt" height="258pt" viewBox="0.00 0.00 751.54 258.40">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 254.4)">
+<title>dependency-cruiser output</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-254.4 747.5391,-254.4 747.5391,4 -4,4"/>
+<g id="clust1" class="cluster">
+<title>cluster_src</title>
+<path fill="#ffffff" stroke="#000000" stroke-width="2" d="M20,-26.4C20,-26.4 723.5391,-26.4 723.5391,-26.4 729.5391,-26.4 735.5391,-32.4 735.5391,-38.4 735.5391,-38.4 735.5391,-230.4 735.5391,-230.4 735.5391,-236.4 729.5391,-242.4 723.5391,-242.4 723.5391,-242.4 20,-242.4 20,-242.4 14,-242.4 8,-236.4 8,-230.4 8,-230.4 8,-38.4 8,-38.4 8,-32.4 14,-26.4 20,-26.4"/>
+<text text-anchor="middle" x="371.7696" y="-230.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="9.00" fill="#000000">src</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_src/rtc</title>
+<path fill="#ffffff" stroke="#000000" stroke-width="2" d="M405.5298,-34.4C405.5298,-34.4 605.5227,-34.4 605.5227,-34.4 611.5227,-34.4 617.5227,-40.4 617.5227,-46.4 617.5227,-46.4 617.5227,-203.4 617.5227,-203.4 617.5227,-209.4 611.5227,-215.4 605.5227,-215.4 605.5227,-215.4 405.5298,-215.4 405.5298,-215.4 399.5298,-215.4 393.5298,-209.4 393.5298,-203.4 393.5298,-203.4 393.5298,-46.4 393.5298,-46.4 393.5298,-40.4 399.5298,-34.4 405.5298,-34.4"/>
+<text text-anchor="middle" x="505.5263" y="-203.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="9.00" fill="#000000">rtc</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_src/rtc/core</title>
+<path fill="#ffffff" stroke="#000000" stroke-width="2" d="M498.0278,-42.4C498.0278,-42.4 597.5227,-42.4 597.5227,-42.4 603.5227,-42.4 609.5227,-48.4 609.5227,-54.4 609.5227,-54.4 609.5227,-176.4 609.5227,-176.4 609.5227,-182.4 603.5227,-188.4 597.5227,-188.4 597.5227,-188.4 498.0278,-188.4 498.0278,-188.4 492.0278,-188.4 486.0278,-182.4 486.0278,-176.4 486.0278,-176.4 486.0278,-54.4 486.0278,-54.4 486.0278,-48.4 492.0278,-42.4 498.0278,-42.4"/>
+<text text-anchor="middle" x="547.7752" y="-176.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="9.00" fill="#000000">core</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_src/utils</title>
+<path fill="#ffffff" stroke="#000000" stroke-width="2" d="M637.5227,-135.4C637.5227,-135.4 715.5391,-135.4 715.5391,-135.4 721.5391,-135.4 727.5391,-141.4 727.5391,-147.4 727.5391,-147.4 727.5391,-176.4 727.5391,-176.4 727.5391,-182.4 721.5391,-188.4 715.5391,-188.4 715.5391,-188.4 637.5227,-188.4 637.5227,-188.4 631.5227,-188.4 625.5227,-182.4 625.5227,-176.4 625.5227,-176.4 625.5227,-147.4 625.5227,-147.4 625.5227,-141.4 631.5227,-135.4 637.5227,-135.4"/>
+<text text-anchor="middle" x="676.5309" y="-176.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="9.00" fill="#000000">utils</text>
+</g>
+<!-- assert -->
+<g id="node1" class="node">
+<title>assert</title>
+<path fill="#ffffcc" stroke="#c0c0c0" d="M697.3302,-18.7011C697.3302,-18.7011 655.7316,-18.7011 655.7316,-18.7011 652.6313,-18.7011 649.5309,-15.6007 649.5309,-12.5004 649.5309,-12.5004 649.5309,-6.2996 649.5309,-6.2996 649.5309,-3.1993 652.6313,-.0989 655.7316,-.0989 655.7316,-.0989 697.3302,-.0989 697.3302,-.0989 700.4305,-.0989 703.5309,-3.1993 703.5309,-6.2996 703.5309,-6.2996 703.5309,-12.5004 703.5309,-12.5004 703.5309,-15.6007 700.4305,-18.7011 697.3302,-18.7011"/>
+<text text-anchor="middle" x="676.5309" y="-6.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#c0c0c0">assert</text>
+</g>
+<!-- src/App.js -->
+<g id="node2" class="node">
+<title>src/App.js</title>
+<g id="a_node2"><a xlink:href="src/App.js" xlink:title="App.js">
+<path fill="#ffffcc" stroke="#000000" d="M148.3006,-153.7011C148.3006,-153.7011 106.702,-153.7011 106.702,-153.7011 103.6017,-153.7011 100.5013,-150.6007 100.5013,-147.5004 100.5013,-147.5004 100.5013,-141.2996 100.5013,-141.2996 100.5013,-138.1993 103.6017,-135.0989 106.702,-135.0989 106.702,-135.0989 148.3006,-135.0989 148.3006,-135.0989 151.4009,-135.0989 154.5013,-138.1993 154.5013,-141.2996 154.5013,-141.2996 154.5013,-147.5004 154.5013,-147.5004 154.5013,-150.6007 151.4009,-153.7011 148.3006,-153.7011"/>
+<text text-anchor="middle" x="127.5013" y="-141.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">App.js</text>
+</a>
+</g>
+</g>
+<!-- src/RoomControlPanel.js -->
+<g id="node3" class="node">
+<title>src/RoomControlPanel.js</title>
+<g id="a_node3"><a xlink:href="src/RoomControlPanel.js" xlink:title="RoomControlPanel.js">
+<path fill="#ffffcc" stroke="#000000" d="M282.3186,-123.7011C282.3186,-123.7011 193.7064,-123.7011 193.7064,-123.7011 190.6061,-123.7011 187.5057,-120.6007 187.5057,-117.5004 187.5057,-117.5004 187.5057,-111.2996 187.5057,-111.2996 187.5057,-108.1993 190.6061,-105.0989 193.7064,-105.0989 193.7064,-105.0989 282.3186,-105.0989 282.3186,-105.0989 285.4189,-105.0989 288.5193,-108.1993 288.5193,-111.2996 288.5193,-111.2996 288.5193,-117.5004 288.5193,-117.5004 288.5193,-120.6007 285.4189,-123.7011 282.3186,-123.7011"/>
+<text text-anchor="middle" x="238.0125" y="-111.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">RoomControlPanel.js</text>
+</a>
+</g>
+</g>
+<!-- src/App.js&#45;&gt;src/RoomControlPanel.js -->
+<g id="edge1" class="edge">
+<title>src/App.js-&gt;src/RoomControlPanel.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M154.5354,-137.0612C167.507,-133.5398 183.3152,-129.2485 197.6714,-125.3512"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="198.4824,-127.3071 203.7227,-123.7085 197.382,-123.2538 198.4824,-127.3071"/>
+</g>
+<!-- src/VideoBroadcastItem.js -->
+<g id="node4" class="node">
+<title>src/VideoBroadcastItem.js</title>
+<g id="a_node4"><a xlink:href="src/VideoBroadcastItem.js" xlink:title="VideoBroadcastItem.js">
+<path fill="#ffffcc" stroke="#000000" d="M284.8316,-154.7011C284.8316,-154.7011 191.1934,-154.7011 191.1934,-154.7011 188.093,-154.7011 184.9927,-151.6007 184.9927,-148.5004 184.9927,-148.5004 184.9927,-142.2996 184.9927,-142.2996 184.9927,-139.1993 188.093,-136.0989 191.1934,-136.0989 191.1934,-136.0989 284.8316,-136.0989 284.8316,-136.0989 287.932,-136.0989 291.0323,-139.1993 291.0323,-142.2996 291.0323,-142.2996 291.0323,-148.5004 291.0323,-148.5004 291.0323,-151.6007 287.932,-154.7011 284.8316,-154.7011"/>
+<text text-anchor="middle" x="238.0125" y="-142.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">VideoBroadcastItem.js</text>
+</a>
+</g>
+</g>
+<!-- src/App.js&#45;&gt;src/VideoBroadcastItem.js -->
+<g id="edge2" class="edge">
+<title>src/App.js-&gt;src/VideoBroadcastItem.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M154.5354,-144.6446C161.8679,-144.711 170.1067,-144.7855 178.4773,-144.8613"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="178.8725,-146.9648 184.8912,-144.9193 178.9105,-142.765 178.8725,-146.9648"/>
+</g>
+<!-- src/VideoProvider.js -->
+<g id="node5" class="node">
+<title>src/VideoProvider.js</title>
+<g id="a_node5"><a xlink:href="src/VideoProvider.js" xlink:title="VideoProvider.js">
+<path fill="#ffffcc" stroke="#000000" d="M379.0843,-155.7011C379.0843,-155.7011 310.4679,-155.7011 310.4679,-155.7011 307.3676,-155.7011 304.2672,-152.6007 304.2672,-149.5004 304.2672,-149.5004 304.2672,-143.2996 304.2672,-143.2996 304.2672,-140.1993 307.3676,-137.0989 310.4679,-137.0989 310.4679,-137.0989 379.0843,-137.0989 379.0843,-137.0989 382.1846,-137.0989 385.285,-140.1993 385.285,-143.2996 385.285,-143.2996 385.285,-149.5004 385.285,-149.5004 385.285,-152.6007 382.1846,-155.7011 379.0843,-155.7011"/>
+<text text-anchor="middle" x="344.7761" y="-143.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">VideoProvider.js</text>
+</a>
+</g>
+</g>
+<!-- src/App.js&#45;&gt;src/VideoProvider.js -->
+<g id="edge3" class="edge">
+<title>src/App.js-&gt;src/VideoProvider.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M154.6766,-153.5911C164.1563,-156.3596 174.9411,-159.0263 185.0026,-160.4 231.6894,-166.7743 244.2843,-166.3865 291.0224,-160.4 296.6421,-159.6802 302.5134,-158.5534 308.225,-157.2444"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="309.0035,-159.2166 314.3405,-155.7631 308.0147,-155.1347 309.0035,-159.2166"/>
+</g>
+<!-- src/RoomControlPanel.js&#45;&gt;src/VideoProvider.js -->
+<g id="edge4" class="edge">
+<title>src/RoomControlPanel.js-&gt;src/VideoProvider.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M269.18,-123.7417C281.1338,-127.3246 294.8965,-131.4497 307.3756,-135.19"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="307.0347,-137.2801 313.3851,-136.9912 308.2406,-133.2569 307.0347,-137.2801"/>
+</g>
+<!-- src/VideoBroadcastItem.js&#45;&gt;src/VideoProvider.js -->
+<g id="edge5" class="edge">
+<title>src/VideoBroadcastItem.js-&gt;src/VideoProvider.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M291.0815,-145.8971C293.4169,-145.9189 295.7531,-145.9408 298.0722,-145.9625"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="298.1394,-148.0632 304.1588,-146.0196 298.1788,-143.8634 298.1394,-148.0632"/>
+</g>
+<!-- src/rtc/useWebRTC.js -->
+<g id="node6" class="node">
+<title>src/rtc/useWebRTC.js</title>
+<g id="a_node6"><a xlink:href="src/rtc/useWebRTC.js" xlink:title="useWebRTC.js">
+<path fill="#ffffcc" stroke="#000000" d="M472.0777,-157.7011C472.0777,-157.7011 407.4799,-157.7011 407.4799,-157.7011 404.3795,-157.7011 401.2792,-154.6007 401.2792,-151.5004 401.2792,-151.5004 401.2792,-145.2996 401.2792,-145.2996 401.2792,-142.1993 404.3795,-139.0989 407.4799,-139.0989 407.4799,-139.0989 472.0777,-139.0989 472.0777,-139.0989 475.1781,-139.0989 478.2784,-142.1993 478.2784,-145.2996 478.2784,-145.2996 478.2784,-151.5004 478.2784,-151.5004 478.2784,-154.6007 475.1781,-157.7011 472.0777,-157.7011"/>
+<text text-anchor="middle" x="439.7788" y="-145.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">useWebRTC.js</text>
+</a>
+</g>
+</g>
+<!-- src/VideoProvider.js&#45;&gt;src/rtc/useWebRTC.js -->
+<g id="edge6" class="edge">
+<title>src/VideoProvider.js-&gt;src/rtc/useWebRTC.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M385.3414,-147.254C388.6825,-147.3243 392.0705,-147.3956 395.4371,-147.4665"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="395.4166,-149.5665 401.4595,-147.5933 395.5051,-145.3674 395.4166,-149.5665"/>
+</g>
+<!-- src/rtc/core/RTCForwardingPeer.js -->
+<g id="node10" class="node">
+<title>src/rtc/core/RTCForwardingPeer.js</title>
+<g id="a_node10"><a xlink:href="src/rtc/core/RTCForwardingPeer.js" xlink:title="RTCForwardingPeer.js">
+<path fill="#ffffcc" stroke="#000000" d="M595.5706,-161.7011C595.5706,-161.7011 499.9799,-161.7011 499.9799,-161.7011 496.8796,-161.7011 493.7792,-158.6007 493.7792,-155.5004 493.7792,-155.5004 493.7792,-149.2996 493.7792,-149.2996 493.7792,-146.1993 496.8796,-143.0989 499.9799,-143.0989 499.9799,-143.0989 595.5706,-143.0989 595.5706,-143.0989 598.6709,-143.0989 601.7713,-146.1993 601.7713,-149.2996 601.7713,-149.2996 601.7713,-155.5004 601.7713,-155.5004 601.7713,-158.6007 598.6709,-161.7011 595.5706,-161.7011"/>
+<text text-anchor="middle" x="547.7752" y="-149.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">RTCForwardingPeer.js</text>
+</a>
+</g>
+</g>
+<!-- src/rtc/useWebRTC.js&#45;&gt;src/rtc/core/RTCForwardingPeer.js -->
+<g id="edge12" class="edge">
+<title>src/rtc/useWebRTC.js-&gt;src/rtc/core/RTCForwardingPeer.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M478.1584,-149.8215C481.1822,-149.9335 484.2775,-150.0482 487.4016,-150.1639"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="487.7676,-152.2788 493.8413,-150.4024 487.9232,-148.0817 487.7676,-152.2788"/>
+</g>
+<!-- src/index.css -->
+<g id="node7" class="node">
+<title>src/index.css</title>
+<g id="a_node7"><a xlink:href="src/index.css" xlink:title="index.css">
+<path fill="#ffffcc" stroke="#000000" d="M148.3006,-184.7011C148.3006,-184.7011 106.702,-184.7011 106.702,-184.7011 103.6017,-184.7011 100.5013,-181.6007 100.5013,-178.5004 100.5013,-178.5004 100.5013,-172.2996 100.5013,-172.2996 100.5013,-169.1993 103.6017,-166.0989 106.702,-166.0989 106.702,-166.0989 148.3006,-166.0989 148.3006,-166.0989 151.4009,-166.0989 154.5013,-169.1993 154.5013,-172.2996 154.5013,-172.2996 154.5013,-178.5004 154.5013,-178.5004 154.5013,-181.6007 151.4009,-184.7011 148.3006,-184.7011"/>
+<text text-anchor="middle" x="127.5013" y="-172.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">index.css</text>
+</a>
+</g>
+</g>
+<!-- src/index.js -->
+<g id="node8" class="node">
+<title>src/index.js</title>
+<g id="a_node8"><a xlink:href="src/index.js" xlink:title="index.js">
+<path fill="#ffffcc" stroke="#000000" d="M63.7993,-184.7011C63.7993,-184.7011 22.2007,-184.7011 22.2007,-184.7011 19.1004,-184.7011 16,-181.6007 16,-178.5004 16,-178.5004 16,-172.2996 16,-172.2996 16,-169.1993 19.1004,-166.0989 22.2007,-166.0989 22.2007,-166.0989 63.7993,-166.0989 63.7993,-166.0989 66.8996,-166.0989 70,-169.1993 70,-172.2996 70,-172.2996 70,-178.5004 70,-178.5004 70,-181.6007 66.8996,-184.7011 63.7993,-184.7011"/>
+<text text-anchor="middle" x="43" y="-172.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">index.js</text>
+</a>
+</g>
+</g>
+<!-- src/index.js&#45;&gt;src/App.js -->
+<g id="edge7" class="edge">
+<title>src/index.js-&gt;src/App.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M67.9455,-165.9856C72.9276,-164.1223 78.1266,-162.1898 83,-160.4 87.0268,-158.9211 91.2637,-157.3795 95.4571,-155.8622"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="96.1941,-157.8289 101.1247,-153.8165 94.7681,-153.8783 96.1941,-157.8289"/>
+</g>
+<!-- src/index.js&#45;&gt;src/index.css -->
+<g id="edge8" class="edge">
+<title>src/index.js-&gt;src/index.css</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M70.2019,-175.4C77.8912,-175.4 86.3455,-175.4 94.3435,-175.4"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="94.3504,-177.5001 100.3504,-175.4 94.3504,-173.3001 94.3504,-177.5001"/>
+</g>
+<!-- src/reportWebVitals.js -->
+<g id="node9" class="node">
+<title>src/reportWebVitals.js</title>
+<g id="a_node9"><a xlink:href="src/reportWebVitals.js" xlink:title="reportWebVitals.js">
+<path fill="#ffffcc" stroke="#000000" d="M165.8032,-215.7011C165.8032,-215.7011 89.1994,-215.7011 89.1994,-215.7011 86.0991,-215.7011 82.9987,-212.6007 82.9987,-209.5004 82.9987,-209.5004 82.9987,-203.2996 82.9987,-203.2996 82.9987,-200.1993 86.0991,-197.0989 89.1994,-197.0989 89.1994,-197.0989 165.8032,-197.0989 165.8032,-197.0989 168.9035,-197.0989 172.0039,-200.1993 172.0039,-203.2996 172.0039,-203.2996 172.0039,-209.5004 172.0039,-209.5004 172.0039,-212.6007 168.9035,-215.7011 165.8032,-215.7011"/>
+<text text-anchor="middle" x="127.5013" y="-203.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">reportWebVitals.js</text>
+</a>
+</g>
+</g>
+<!-- src/index.js&#45;&gt;src/reportWebVitals.js -->
+<g id="edge9" class="edge">
+<title>src/index.js-&gt;src/reportWebVitals.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M67.9455,-184.8144C72.9276,-186.6777 78.1266,-188.6102 83,-190.4 87.0268,-191.8789 91.2637,-193.4205 95.4571,-194.9378"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="94.7681,-196.9217 101.1247,-196.9835 96.1941,-192.9711 94.7681,-196.9217"/>
+</g>
+<!-- src/rtc/core/RTCForwardingPeer.js&#45;&gt;assert -->
+<g id="edge11" class="edge">
+<title>src/rtc/core/RTCForwardingPeer.js-&gt;assert</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" stroke-opacity="0.200000" d="M601.5555,-145.4484C607.3166,-143.1815 612.7918,-140.2309 617.5227,-136.4 653.2301,-107.4852 668.3753,-52.0503 673.8577,-25.0083"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-opacity="0.200000" points="675.9847,-25.0662 675.05,-18.7784 671.8596,-24.2767 675.9847,-25.0662"/>
+</g>
+<!-- src/utils/test&#45;connection.js -->
+<g id="node11" class="node">
+<title>src/utils/test-connection.js</title>
+<g id="a_node11"><a xlink:href="src/utils/test-connection.js" xlink:title="test-connection.js">
+<path fill="#ffffcc" stroke="#000000" d="M713.3466,-161.7011C713.3466,-161.7011 639.7152,-161.7011 639.7152,-161.7011 636.6148,-161.7011 633.5145,-158.6007 633.5145,-155.5004 633.5145,-155.5004 633.5145,-149.2996 633.5145,-149.2996 633.5145,-146.1993 636.6148,-143.0989 639.7152,-143.0989 639.7152,-143.0989 713.3466,-143.0989 713.3466,-143.0989 716.447,-143.0989 719.5473,-146.1993 719.5473,-149.2996 719.5473,-149.2996 719.5473,-155.5004 719.5473,-155.5004 719.5473,-158.6007 716.447,-161.7011 713.3466,-161.7011"/>
+<text text-anchor="middle" x="676.5309" y="-149.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">test-connection.js</text>
+</a>
+</g>
+</g>
+<!-- src/rtc/core/RTCForwardingPeer.js&#45;&gt;src/utils/test&#45;connection.js -->
+<g id="edge10" class="edge">
+<title>src/rtc/core/RTCForwardingPeer.js-&gt;src/utils/test-connection.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M601.6332,-152.4C610.0899,-152.4 618.7954,-152.4 627.1448,-152.4"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="627.4502,-154.5001 633.4501,-152.4 627.4501,-150.3001 627.4502,-154.5001"/>
+</g>
+<!-- src/rtc/core/RTCService.js -->
+<g id="node12" class="node">
+<title>src/rtc/core/RTCService.js</title>
+<g id="a_node12"><a xlink:href="src/rtc/core/RTCService.js" xlink:title="RTCService.js">
+<path fill="#ccffcc" stroke="#000000" d="M578.5682,-130.7011C578.5682,-130.7011 516.9823,-130.7011 516.9823,-130.7011 513.8819,-130.7011 510.7816,-127.6007 510.7816,-124.5004 510.7816,-124.5004 510.7816,-118.2996 510.7816,-118.2996 510.7816,-115.1993 513.8819,-112.0989 516.9823,-112.0989 516.9823,-112.0989 578.5682,-112.0989 578.5682,-112.0989 581.6686,-112.0989 584.7689,-115.1993 584.7689,-118.2996 584.7689,-118.2996 584.7689,-124.5004 584.7689,-124.5004 584.7689,-127.6007 581.6686,-130.7011 578.5682,-130.7011"/>
+<text text-anchor="middle" x="547.7752" y="-118.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">RTCService.js</text>
+</a>
+</g>
+</g>
+<!-- src/rtc/core/index.js -->
+<g id="node13" class="node">
+<title>src/rtc/core/index.js</title>
+<g id="a_node13"><a xlink:href="src/rtc/core/index.js" xlink:title="index.js">
+<path fill="#ccffcc" stroke="#000000" d="M568.5745,-99.7011C568.5745,-99.7011 526.976,-99.7011 526.976,-99.7011 523.8756,-99.7011 520.7752,-96.6007 520.7752,-93.5004 520.7752,-93.5004 520.7752,-87.2996 520.7752,-87.2996 520.7752,-84.1993 523.8756,-81.0989 526.976,-81.0989 526.976,-81.0989 568.5745,-81.0989 568.5745,-81.0989 571.6749,-81.0989 574.7752,-84.1993 574.7752,-87.2996 574.7752,-87.2996 574.7752,-93.5004 574.7752,-93.5004 574.7752,-96.6007 571.6749,-99.7011 568.5745,-99.7011"/>
+<text text-anchor="middle" x="547.7752" y="-87.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">index.js</text>
+</a>
+</g>
+</g>
+<!-- src/rtc/core/oldrtcApi.js -->
+<g id="node14" class="node">
+<title>src/rtc/core/oldrtcApi.js</title>
+<g id="a_node14"><a xlink:href="src/rtc/core/oldrtcApi.js" xlink:title="oldrtcApi.js">
+<path fill="#ccffcc" stroke="#000000" d="M571.5755,-68.7011C571.5755,-68.7011 523.975,-68.7011 523.975,-68.7011 520.8746,-68.7011 517.7742,-65.6007 517.7742,-62.5004 517.7742,-62.5004 517.7742,-56.2996 517.7742,-56.2996 517.7742,-53.1993 520.8746,-50.0989 523.975,-50.0989 523.975,-50.0989 571.5755,-50.0989 571.5755,-50.0989 574.6759,-50.0989 577.7763,-53.1993 577.7763,-56.2996 577.7763,-56.2996 577.7763,-62.5004 577.7763,-62.5004 577.7763,-65.6007 574.6759,-68.7011 571.5755,-68.7011"/>
+<text text-anchor="middle" x="547.7752" y="-56.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">oldrtcApi.js</text>
+</a>
+</g>
+</g>
+</g>
+</svg>

@@ -1,4 +1,4 @@
-\chapter{Aplicații WebRTC}
+\chapter{Studiu de caz. Distribuție multimedia în aplicații WebRTC}
 \label{chap:ch4}
 
 \section{Microsoft Teams}
@@ -14,14 +14,35 @@
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=11cm]{figures/ms_teams_topology.png}
-    \caption{Topologia de rețea folosită în apelurile Microsoft Teams în care toți participanții folosesc Teams}
+    \caption{Topologia de rețea folosită în apelurile Microsoft Teams în care toți participanții folosesc Teams \cite{TeamsFlows2018}}
 \end{figure}
 \indent \par Pentru a face posibile conversațiile pe Teams prin linia telefonică, Microsoft pune la dispoziție așa numitul Phone System prin abonamentul Microsoft 365, care este un private branch exchange (PBX), o centrală telefonică.
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=11cm]{figures/ms_teams_to_pstn.png}
-    \caption{Topologia unei conversații între un utilizator Teams și un utilizator al liniei telefonice obișnuite}
+    \caption{Topologia unei conversații între un utilizator Teams și un utilizator al liniei telefonice obișnuite \cite{TeamsFlows2018}}
 \end{figure}
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=15.6cm]{figures/ms_teams_rtp_capture.png}
+    \caption{Captură de pachete RTP și RTCP dintr-o sesiune Teams}
+    \label{TeamsRTPCapture}
+\end{figure}
+\indent \par Din captura pachetelor dintr-o conversație folosind aplicația Wireshark rezultă că payload type-ul (PT) din pachetele RTP are numărul 122 (\texttt{DynamicRTP-Type-122}), ceea ce înseamnă că folosește codecul H.264 cu clock rate de 90000 Hz \cite{MicrosoftRTP}. Există și pachete cu PT-ul 104, semnificând prezența codecului audio Silk, folosit inițial de Skype \cite{MicrosoftRTP}. Adresa de proveniență este 52.115.134.5, care, conform unei analize pe \textit{ipinfo.io}, aparține subrețelei 52.112.0.0/14, proprietară companiei Microsoft și folosită pentru DNS, routing și peering. În figură sunt două SSRC-uri distincte pentru PT-urile cu valoarea 122 cu proveniență de la aceeași adresă IP, ceea ce demonstrează rolul de releu al serverului TURN, prin care nu se multiplexează stream-urile de la fiecare participant într-unul singur.
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=15.6cm]{figures/ms_teams_stun_capture.png}
+    \caption{Captură de pachete TURN (notă: Wireshark nu distinge STUN de TURN, deoarece TURN este o extensie a protocolului STUN)}
+    \label{TeamsSTUNCapture}
+\end{figure}
+\indent \par Observând din perspectiva stream-urilor, observăm că se transmit mult mai puține pachete video. Știind că în conversație a fost preponderent o singură cameră pornită, observăm valori maxime ale delta mari pentru majoritatea stream-urilor video, ce pot ajunge și la 7681 ms. Valorile pentru jitter sunt nule, ceea ce rezultă o transmisie eficientă, cu latență minimă, prin serverul TURN.
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=15.6cm]{figures/ms_teams_rtp_streams.png}
+    \caption{Lista stream-urilor RTP într-o sesiune Teams}
+    \label{TeamsRTPStreams}
+\end{figure}
+%\indent \par Pentru situațiile în care predomină o singură cameră, se consideră o transmisie unidirecțională.
 
 \section{Jitsi Meet}
 \label{chap:ch4sec2}
@@ -35,13 +56,13 @@
 \begin{figure}[H]
     \centering
     \includegraphics[width=15cm]{figures/jitsi_videobridge_bandwidth.png}
-    \caption{Grafic pentru lățimea de bandă folosită direct proporțională cu numărul de streamuri}
+    \caption{Grafic pentru lățimea de bandă folosită direct proporțională cu numărul de streamuri \cite{JitsiVideobridge}}
     \label{JitsiVideobridgeBandwidth}
 \end{figure}
 \begin{figure}[H]
     \centering
     \includegraphics[width=11cm,trim={0 0 0 3cm}, clip]{figures/jitsi_videobridge_cpu.png}
-    \caption{Grafic al capacității procesorului folosite în funcție de lățimea de bandă}
+    \caption{Grafic al capacității procesorului folosite în funcție de lățimea de bandă \cite{JitsiVideobridge}}
     \label{JitsiVideobridgeCPU}
 \end{figure}
 \indent \par Deoarece pot fi mulți participanți într-o conferință, s-a creat Jicofo (Jitsi Conference Focus), care are rolul de load balancing între fiecare participant și Videobridge \cite{JitsiArchitecture}.
@@ -61,6 +82,6 @@
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=14cm]{figures/zoom_no_ice_servers.png}
-    \caption{Configurația folosită de clientul web Zoom}
+    \caption{Configurația folosită de clientul web Zoom \cite{ZoomWebRTC}}
 \end{figure}
 \indent \par Zoom, de asemenea, manipulează descriptorul creat folosind funcția \textit{createOffer} înainte să îl seteze ca fiind cel local. Va schimba username fragment-ul candidaților (prezent în SDP ca \texttt{a=ice-ufrag}) dintr-unul scurt, generat de Chrome, cu un UUID lung \cite{ZoomWebRTC}. Folosește specificația \textit{ice-lite}, o versiune minimală a protocolului ICE, marcată în SDP ca \texttt{a=ice-lite}.
